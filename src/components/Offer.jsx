@@ -19,7 +19,7 @@ const Offer = () => {
 
   let lang = localStorage.getItem("lang");
 
-  if (lang == "en") return <Row></Row>;
+  if (lang == "en") return <Row>  <Lokale/></Row>;
   else
     return (
  <Row>

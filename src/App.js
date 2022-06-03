@@ -10,6 +10,7 @@ import Other from "./components/Other";
 import Portfolio from "./components/Portfolio";
 import Offer from "./components/Offer";
 import Nav from "./components/Nav";
+import NavMobile from "./components/NavMobile";
 import TypA from "./components/TypA";
 import TypB from "./components/TypB";
 import TypC from "./components/TypC";
@@ -22,8 +23,12 @@ function App() {
         <Col s={12} m={10} l={8} push="m1 l2 s0" className="appbg">
           <BrowserRouter>
             <br />
-
-            <Nav />
+            <div className="hide-on-small-only">
+<Nav />
+            </div>
+            <div className="hide-on-med-and-up">
+<NavMobile />
+            </div>
             <br />
 
             <Switch>
@@ -87,12 +92,20 @@ function App() {
       </Row>
 <div className="hide-on-small-only">
       <Button
+        className="z-depth-2  btnhome0 red"
+        target="blank"
+        node="a"
+        href="https://goo.gl/maps/xrJdtaQWoJFFU5ya7"
+      >
+        Nasze Biuro
+      </Button>
+      <Button
         className="z-depth-2  btnhome1 red"
         target="blank"
         node="a"
         href="https://goo.gl/maps/xrJdtaQWoJFFU5ya7"
       >
-        Google Maps
+        Willa Złoscień
       </Button>
       <Button
         className="z-depth-2 red  btnhome2"

@@ -16,6 +16,7 @@ import {
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Lista from "./Lista";
+import Lista2 from "./Lista2";
 import axoLokale from "./img/axoLokale.webp";
 import axoLokale1 from "./img/axoLokale1.webp";
 import axoLokale2 from "./img/axoLokale2.webp";
@@ -38,11 +39,28 @@ const Lokale = () => {
           <td>{Lista.Cena}</td>
           <td>{Lista.Status}</td>
           <td>{Lista.Rzut}</td>
-          <td>{Lista.Informacje}</td>
+        
         </tr>
       </Table>
     );
-  });
+  }
+  );
+  const items2 = Lista2.map((Lista2) => {
+    return (
+      <Table>
+        <tr className="hoverable">
+          <td>{Lista2.Lokal}</td>
+          <td>{Lista2.Metraz}</td>
+          <td>{Lista2.Pietro}</td>
+          <td>{Lista2.Cena}</td>
+          <td>{Lista2.Status}</td>
+          <td>{Lista2.Rzut}</td>
+        
+        </tr>
+      </Table>
+    );
+  }
+  );
 
   return (
     <div>
@@ -104,7 +122,14 @@ const Lokale = () => {
       </div>{" "}
 
       <Card className="z-depth-5 white">
+        <h5>Etap I - Willa Złocień <Divider/></h5>
+        <Row/>
       {items}
+      </Card>
+      <Card className="z-depth-5 white">
+        <h5>Etap II - Rozbudowa <Divider/></h5>
+        <Row/>
+      {items2}
       </Card>
     </div>
   );

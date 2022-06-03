@@ -13,12 +13,36 @@ const Nav = () => {
 
   let lang = localStorage.getItem("lang");
 
-  if (lang == "en") return <Row></Row>;
+  if (lang == "en") return  <Row className="navbar">
+  <Col m={10} push="m1">
+    <h3 className="red-text">Willa Złocień</h3>
+    <div className="text-black">
+    <Link to="home" className="navbaritem">
+      O inwestycji
+    </Link>
+
+    <Link to="portfolio" className="navbaritem">
+      Standart
+    </Link>
+    
+    <Link to="offer" className="navbaritem">
+      Lokale
+    </Link>
+    <Link to="gallery" className="navbaritem">
+      Galeria
+    </Link>
+    <Link to="contact" className="navbaritem">
+      Kontakt
+    </Link>
+    <Divider/></div>
+  </Col>
+</Row>;
   else
     return (
       <Row className="navbar">
         <Col m={10} push="m1">
-          <h3>Willa Złocień</h3>
+          <h3 className="red-text">Willa Złocień</h3>
+          <div className="text-black">
           <Link to="home" className="navbaritem">
             O inwestycji
           </Link>
@@ -36,7 +60,7 @@ const Nav = () => {
           <Link to="contact" className="navbaritem">
             Kontakt
           </Link>
-          <Divider/>
+          <Divider/></div>
         </Col>
       </Row>
     );

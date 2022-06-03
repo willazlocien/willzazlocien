@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Button, Modal, Row, Col } from "react-materialize";
+import { Table, Button, Modal, Row, Col,  } from "react-materialize";
 import Divider from "react-materialize/lib/Divider";
 import planparter1 from "./svg/planparter1.svg";
 import planparter2 from "./svg/planparter2.svg";
@@ -8,24 +8,64 @@ import planpietro1a from "./svg/planpietro1a.svg";
 import planpoddasze1a from "./svg/planppoddasze1a.svg";
 import planpietro1b from "./svg/planpietro1b.svg";
 import planpoddasze1b from "./svg/planppoddasze1b.svg";
+import { Link } from "react-router-dom";
 let baseURL =
   "https://raw.githubusercontent.com/galeriapodsloncem/3dstrona/master/babylonjs-app/public/assets/";
 const Lista = [
   {
-    Lokal: <h5>Lokal</h5>,
-    Metraz: <h5>Metraz</h5>,
-    Pietro: <h5>Piętro</h5>,
-    Cena: <h5>Cena</h5>,
-    Status: <h5>Status</h5>,
-    Rzut: <h5>Rzut</h5>,
-    Informacje: <h5>Informacjie</h5>,
+    Lokal: "Lokal",
+    Metraz: "Metraz",
+    Pietro: "Piętro",
+    Cena: "Cena",
+    Status: "Dotępność",
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Informacje "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button className="red" node="button" disabled small>
+            Informacje
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />
+         informacje ogolne
+        </Row>
+      </Modal>
+    ),
+   
   },
   {
     Lokal: "M 1",
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -54,7 +94,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -71,47 +111,26 @@ const Lista = [
             <h5 className="center">Wersja B</h5>
           </Col>
           <Col s={12} m={4} l={4} push="m">
-            <h5>
-              Zestawienie pomieszczeń
-              <br/><br/>
-              <li className="grey lighten-2">
-                Hol 5.27 m2
-                <Divider />
-              </li>
-              <li className="yellow lighten-4">
-                Przedsionek 1.88 m2
-                <Divider />
-              </li>
-              <li className=" teal lighten-5">
-                Sypialnia 1 10.37 m2
-                <Divider />
-              </li>
-              <li className=" brown lighten-3">
-                Sypialnia 2 10.37 m2
-                <Divider />
-              </li>
-              <li className=" blue lighten-4">
-                  Łazienka 1 5.33 m2
-                  <Divider />
-                </li>
-                <li className="red lighten-4">
-                  Salon z aneksem A 20.18 m2
-                  <Divider />
-                </li>
-                <li className="red lighten-4">
-                  Salon z aneksem B 30.55 m2
-                  <Divider />
-                </li>
-                <li>
-                Taras 7.5 m2
-                <Divider />
-              </li>
-              <li>
-                Ogród
-                <Divider />
-              </li>
-            </h5>
+           
+            
           </Col>
+       
+      <Button
+        className="z-depth-2 red  "
+        target="blank"
+        node="a"
+        href="tel:+48518048983"
+      >
+        zadzwoń
+      </Button>
+      <Button
+        className="z-depth-2  red "
+        target="blank"
+        node="a"
+        href="https://goo.gl/maps/xrJdtaQWoJFFU5ya7"
+      >
+        Email
+      </Button>
         </Row>
       </Modal>
     ),
@@ -127,7 +146,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -155,7 +176,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -172,53 +193,7 @@ const Lista = [
             
           </Col>
           <Col s={12} m={4} l={4} push="m">
-            <h5>
-              Zestawienie pomieszczeń
-              <br/><br/>
-              <li className="grey lighten-2">
-                Hol 2.81 m2
-                <Divider />
-              </li>
-              <li className="yellow lighten-4">
-                Pokój 6.15 m2
-                <Divider />
-              </li>
-              <li className=" teal lighten-5">
-                Sypialnia 1 10.37 m2
-                <Divider />
-              </li>
-              <li className=" brown lighten-3">
-                Sypialnia 2 10.37 m2
-                <Divider />
-              </li>
-              <li className=" blue lighten-4">
-                  Łazienka 1 5.33 m2
-                  <Divider />
-                </li>
-                <li className="red lighten-4">
-                  Salon z aneksem  20.18 m2
-                  <Divider />
-                </li>
-               
-                <li>
-                Balkon 5.36 m2
-                <Divider />
-              </li>
-              <li>
-                Ogród - naprzeciwko wejścia
-                <Divider />
-              </li><br/>
-              Przy zaadaptowanym poddaszu
-              <br/><br/>
-              <li className="pink lighten-4">
-                Sypialnia 3 25 m2
-                <Divider />
-              </li>
-              <li className="green lighten-4">
-                Łazienka 2 4 m2
-                <Divider />
-              </li>
-            </h5>
+            
           </Col>
         </Row>
       </Modal>
@@ -235,7 +210,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -264,7 +241,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -337,7 +314,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -365,7 +344,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -446,7 +425,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -475,7 +456,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -548,7 +529,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -576,7 +559,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -656,7 +639,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -685,7 +670,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -758,7 +743,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -786,7 +773,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -867,7 +854,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -896,7 +885,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -969,7 +958,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -997,7 +988,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1077,7 +1068,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -1106,7 +1099,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1179,7 +1172,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -1207,7 +1202,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1288,7 +1283,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -1317,7 +1314,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1390,7 +1387,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -1418,7 +1417,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1498,7 +1497,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -1527,7 +1528,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1600,7 +1601,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -1628,7 +1631,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1709,7 +1712,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -1738,7 +1743,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1811,7 +1816,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -1839,7 +1846,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -1919,7 +1926,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -1948,7 +1957,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -2021,7 +2030,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -2049,7 +2060,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -2130,7 +2141,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -2159,7 +2172,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -2232,7 +2245,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -2260,7 +2275,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -2340,7 +2355,9 @@ const Lista = [
     Metraz: "52m2",
     Pietro: "0 pietro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
       className="modalid"
@@ -2369,7 +2386,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
@@ -2442,7 +2459,9 @@ const Lista = [
     Metraz: "55m2",
     Pietro: "1 piętro",
     Cena: "2pln",
-    Status: "Wolny",
+    Status:   <Link to="contact" className="navbaritem">
+            Zapytaj
+          </Link>,
     Rzut: (
       <Modal
         actions={[
@@ -2470,7 +2489,7 @@ const Lista = [
         }}
         trigger={
           <Button className="red" node="button" small>
-            Rzut
+            Informacje
           </Button>
         }
       >
