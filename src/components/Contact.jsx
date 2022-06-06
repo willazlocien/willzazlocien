@@ -50,10 +50,10 @@ class Contact extends React.Component {
               >
                 Google Maps
               </Button>
-              <a className="btn-large red " href="tel:+48518048983">
+              <a className="btn-large red " href="tel:+ 48601437453">
                 Call us
               </a>
-              <CardPanel className="white z-depth-2">
+              {/* <CardPanel className="white z-depth-2">
                 <h5 className="center">Contact form</h5>
                 <Row></Row>
                 <Divider />
@@ -91,7 +91,7 @@ class Contact extends React.Component {
                     </button>
                   </form>
                 </div>
-              </CardPanel>
+              </CardPanel> */}
               <CardPanel className="white z-depth-2">
                 If additional information is required, please contact us using
                 the application form or with our office from Monday to Friday,
@@ -144,14 +144,14 @@ class Contact extends React.Component {
                 large
                 target="blank"
                 node="a"
-                href="https://goo.gl/maps/xrJdtaQWoJFFU5ya7"
+                href="https://goo.gl/maps/te1YqVZKmfbe3EdM6"
               >
                 Google Maps
               </Button>
-              <a className="btn-large black " href="tel:+48518048983">
+              <a className="btn-large black " href="tel:+ 48601437453">
                 zadzwoń
               </a>
-              <CardPanel className="white z-depth-2">
+              {/* <CardPanel className="white z-depth-2">
                 <h5 className="center">Formularz Kontaktowy</h5>
                 <Row></Row>
                 <Divider />
@@ -167,7 +167,7 @@ class Contact extends React.Component {
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form>   </div>
-              </CardPanel>
+              </CardPanel> */}
               <CardPanel className="white z-depth-2">
                 W razie zainteresowania lub w celu uzyskania dodatkowych
                 informacji prosimy o kontakt za pomocą formularza zgłoszeniowego
@@ -180,8 +180,8 @@ class Contact extends React.Component {
                 <br />
                Rakowicka 15
                 <br />
-                31-013 Krakow
-                <br />T : +48 xxxxxxxxxxxxx
+                31-511 Krakow
+                <br />T : +48 601437453
                 <br />
                 E: leszek.kraus@ideadevelopment.pl 
               </CardPanel>

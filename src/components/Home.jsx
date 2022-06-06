@@ -27,9 +27,10 @@ import arrow from "./svg/arrow.svg";
 import oddanie from "./svg/oddanie.svg";
 import budowa from "./svg/budowa.svg";
 import sprzedaz from "./svg/sprzedaz.svg";
-import img1 from "../components/img/1.png"
-import img2 from "../components/img/2.png"
-import img3 from "../components/img/3.png"
+import img1 from "../components/img/Image 01.png"
+import img2 from "../components/img/Image 04.png"
+import img3 from "../components/img/Image 15.png"
+
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -45,7 +46,7 @@ const Home = () => {
           <div className="video-wrapper z-depth-5 hide-on-small-only">
             <ReactPlayer
               // className="react-player"
-              url="https://youtu.be/e2pJmZU8rdA"
+              url="https://youtu.be/v8f9e9BM33I"
               playing={true}
               muted={true}
               width="100%"
@@ -257,7 +258,7 @@ const Home = () => {
                 </div>
               </Col>
               <Col m={6} s={12}>
-              <Iframe url="https://sketchfab.com/models/a85b372a3f8d4a7985caea65ca94932b/embed"
+              <Iframe url="https://sketchfab.com/models/0bb9d7472cda434a93534511dc88f849/embed"
      width="90%"
        height="500px"
       id="videoIframe"

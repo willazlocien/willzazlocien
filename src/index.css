@@ -91,3 +91,10 @@ background-color: rgba(255, 255, 255, 0.5);
 .car{
   min-height: 30vw;
 }
+
+.tabela{
+  height: 10vh !important;
+}
+/* .modalid{
+  min-height: 80vh;
+} */

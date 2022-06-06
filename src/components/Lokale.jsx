@@ -21,7 +21,7 @@ import axoLokale from "./img/axoLokale.webp";
 import axoLokale1 from "./img/axoLokale1.webp";
 import axoLokale2 from "./img/axoLokale2.webp";
 import axoLokale3 from "./img/axoLokale3.webp";
-
+import Test from "./test"
 const Lokale = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -29,38 +29,6 @@ const Lokale = () => {
 
   let lang = localStorage.getItem("lang");
 
-  const items = Lista.map((Lista) => {
-    return (
-      <Table>
-        <tr className="hoverable">
-          <td>{Lista.Lokal}</td>
-          <td>{Lista.Metraz}</td>
-          <td>{Lista.Pietro}</td>
-          <td>{Lista.Cena}</td>
-          <td>{Lista.Status}</td>
-          <td>{Lista.Rzut}</td>
-        
-        </tr>
-      </Table>
-    );
-  }
-  );
-  const items2 = Lista2.map((Lista2) => {
-    return (
-      <Table>
-        <tr className="hoverable">
-          <td>{Lista2.Lokal}</td>
-          <td>{Lista2.Metraz}</td>
-          <td>{Lista2.Pietro}</td>
-          <td>{Lista2.Cena}</td>
-          <td>{Lista2.Status}</td>
-          <td>{Lista2.Rzut}</td>
-        
-        </tr>
-      </Table>
-    );
-  }
-  );
 
   return (
     <div>
@@ -124,12 +92,12 @@ const Lokale = () => {
       <Card className="z-depth-5 white">
         <h5>Etap I - Willa Złocień <Divider/></h5>
         <Row/>
-      {items}
+     <Test/>
       </Card>
       <Card className="z-depth-5 white">
         <h5>Etap II - Rozbudowa <Divider/></h5>
         <Row/>
-      {items2}
+      
       </Card>
     </div>
   );

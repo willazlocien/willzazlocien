@@ -15,7 +15,7 @@ import TypA from "./components/TypA";
 import TypB from "./components/TypB";
 import TypC from "./components/TypC";
 import TypD from "./components/TypD";
-
+import test from "./components/test"
 function App() {
   return (
     <div className="App">
@@ -41,6 +41,7 @@ function App() {
               <Route path="/typc" component={TypC} />
               <Route path="/typd" component={TypD} />
               <Route path="/gallery" component={Gallery} />
+              <Route path="/test" component={test} />
               <Route path="/other" component={Other} />{" "}
               <Route path="/:any" component={Home} />
               <Route path="/" component={Home} />
@@ -95,7 +96,7 @@ function App() {
         className="z-depth-2  btnhome0 red"
         target="blank"
         node="a"
-        href="https://goo.gl/maps/xrJdtaQWoJFFU5ya7"
+        href="https://goo.gl/maps/te1YqVZKmfbe3EdM6"
       >
         Nasze Biuro
       </Button>
@@ -103,15 +104,15 @@ function App() {
         className="z-depth-2  btnhome1 red"
         target="blank"
         node="a"
-        href="https://goo.gl/maps/xrJdtaQWoJFFU5ya7"
+        href="https://goo.gl/maps/sSB9xmXwWHLGFXTD9"
       >
-        Willa Złoscień
+        Willa Złocień
       </Button>
       <Button
         className="z-depth-2 red  btnhome2"
         target="blank"
         node="a"
-        href="tel:+48518048983"
+        href="tel:+ 48601437453"
       >
         zadzwoń
       </Button>
@@ -119,7 +120,7 @@ function App() {
         className="z-depth-2  red btnhome3"
         target="blank"
         node="a"
-        href="https://goo.gl/maps/xrJdtaQWoJFFU5ya7"
+        href="mailto:leszek.kraus@ideadevelopment.pl"
       >
         Email
       </Button>
