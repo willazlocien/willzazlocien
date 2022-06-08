@@ -36,7 +36,7 @@ function App() {
               <Route path="/contact" component={Contact} />
               <Route path="/offer" component={Offer} />
               <Route path="/portfolio" component={Portfolio} />
-              <Route path="/typa" component={TypA} />
+              <Route path="/wprowadzzmiany" component={TypA} />
               <Route path="/typb" component={TypB} />
               <Route path="/typc" component={TypC} />
               <Route path="/typd" component={TypD} />

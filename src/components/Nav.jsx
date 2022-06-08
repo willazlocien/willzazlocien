@@ -10,7 +10,7 @@ const Nav = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-
+  
   let lang = localStorage.getItem("lang");
 
   if (lang == "en") return  <Row className="navbar">
@@ -25,7 +25,7 @@ const Nav = () => {
       Standart
     </Link>
     
-    <Link to="offer" className="navbaritem">
+    <Link to="offer" className="navbaritem" >
       Lokale
     </Link>
     <Link to="gallery" className="navbaritem">
@@ -51,7 +51,7 @@ const Nav = () => {
             Standart
           </Link>
           
-          <Link to="offer" className="navbaritem">
+          <Link to="offer" className="navbaritem" >
             Lokale
           </Link>
           <Link to="gallery" className="navbaritem">
