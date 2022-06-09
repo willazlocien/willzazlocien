@@ -317,7 +317,7 @@ const Home = () => {
                 <br />
               </Col>
               <Col s={12} m={4}>
-                Zakończenie Etapu 1 - planowane na rok 2023/2022
+                Zakończenie Etapu 2 - planowane na rok 2023/2022
                 <br />
               </Col>
               <Col s={12} m={4}>
