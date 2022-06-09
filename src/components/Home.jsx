@@ -20,9 +20,9 @@ import silence from "./svg/silence.svg";
 import windows from "./svg/windows.svg";
 import layout from "./svg/layout.svg";
 import arrow from "./svg/arrow.svg";
-import img1 from "../components/img/Image 01.png";
-import img2 from "../components/img/Image 04.png";
-import img3 from "../components/img/Image 15.png";
+import img1 from "../components/img/Image 01.webp";
+import img2 from "../components/img/Image 04.webp";
+import img3 from "../components/img/Image 15.webp";
 
 const Home = () => {
   useEffect(() => {

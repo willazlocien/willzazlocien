@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 import arch from "../components/svg/arch.svg";
 import ogrod from "../components/svg/ogrod.svg";
 import interrior from "../components/svg/interrior.svg";
-import bim from "../components/svg/bim.svg";
 const Portfolio = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });

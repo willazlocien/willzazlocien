@@ -13,7 +13,7 @@ import {
 } from "react-materialize";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Lista from "./Lista";
+
 
 const Standart = () => {
   useEffect(() => {

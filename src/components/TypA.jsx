@@ -1,11 +1,8 @@
 import db from "./firebase.config";
 import React, { useState, useEffect } from "react";
-import Lista from "./Lista";
-import axios from "axios";
 import "materialize-css";
 import { Modal, Card, Col, Row } from "react-materialize";
 import Button from "react-materialize/lib/Button";
-import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/storage";
 import "firebase/database";

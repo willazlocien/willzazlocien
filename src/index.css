@@ -11,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background: url(../src/components/img/bg.png);
+  background: url(../src/components/img/bg.webp);
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;

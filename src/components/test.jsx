@@ -4,16 +4,7 @@ import Lista from "./Lista";
 import axios from "axios";
 import "materialize-css";
 import { Divider, Modal, Col, Row } from "react-materialize";
-import Button from "react-materialize/lib/Button";
-import lokal1 from "./svg/M.1.1 .svg"
-import lokal2 from "./svg/M.1.2.svg"
-import lokal3 from "./svg/M.2.1 .svg"
-import lokal4 from "./svg/M.2.2.svg"
-import lokal5 from "./svg/M.2.3.svg"
-import lokal6 from "./svg/M.3.2.svg"
-import lokal7 from "./svg/M.3.3.svg"
-import lokal8 from "./svg/M.1.1 .svg"
-import lokal9 from "./svg/M.1.1 .svg"
+
 
 const Read = () => {
  

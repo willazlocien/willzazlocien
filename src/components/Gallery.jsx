@@ -6,25 +6,25 @@ import {
   Row,
 } from "react-materialize";
 
-import img1 from "../components/img/Image 01.png";
-import img2 from "../components/img/Image 02.png";
-import img3 from "../components/img/Image 03.png";
-import img4 from "../components/img/Image 04.png";
-import img5 from "../components/img/Image 05.png";
-import img6 from "../components/img/Image 06.png";
-import img7 from "../components/img/Image 07.png";
-import img8 from "../components/img/Image 08.png";
-import img9 from "../components/img/Image 09.png";
-import img10 from "../components/img/Image 10.png";
-import img11 from "../components/img/Image 11.png";
-import img12 from "../components/img/Image 12.png";
-import img13 from "../components/img/Image 13.png";
-import img14 from "../components/img/Image 14.png";
-import img15 from "../components/img/Image 15.png";
-import img16 from "../components/img/Image 16.png";
-import img17 from "../components/img/Image 17.png";
-import img18 from "../components/img/Image 18.png";
-import img19 from "../components/img/Image 21.png";
+import img1 from "../components/img/Image 01.webp";
+import img2 from "../components/img/Image 02.webp";
+import img3 from "../components/img/Image 03.webp";
+import img4 from "../components/img/Image 04.webp";
+import img5 from "../components/img/Image 05.webp";
+import img6 from "../components/img/Image 06.webp";
+import img7 from "../components/img/Image 07.webp";
+import img8 from "../components/img/Image 08.webp";
+import img9 from "../components/img/Image 09.webp";
+import img10 from "../components/img/Image 10.webp";
+import img11 from "../components/img/Image 11.webp";
+import img12 from "../components/img/Image 12.webp";
+import img13 from "../components/img/Image 13.webp";
+import img14 from "../components/img/Image 14.webp";
+import img15 from "../components/img/Image 15.webp";
+import img16 from "../components/img/Image 16.webp";
+import img17 from "../components/img/Image 17.webp";
+import img18 from "../components/img/Image 18.webp";
+import img19 from "../components/img/Image 21.webp";
 import Iframe from "react-iframe";
 export default class Gallery extends React.Component {
   render() {
