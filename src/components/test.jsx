@@ -36,7 +36,7 @@ useEffect(() => {
   const items = info.map((data) => {
     if (data.DOSTEPNOSC == "WOLNY")
     return (
-      <Row className="hoverable green-text">
+      <Row className="hoverable green-text textMobile">
          <Col className="tabela" s={2}>
           {data.LOKAL}
         </Col>
@@ -57,7 +57,7 @@ useEffect(() => {
     )
     else
     return (
-      <Row className="hoverable red-text">
+      <Row className="hoverable red-text textMobile">
         <Col className="tabela" s={2}>
           {data.LOKAL}
         </Col>
@@ -97,8 +97,8 @@ useEffect(() => {
 
 
     
-    <Row className="white">
-      <Col s={8}>
+    <Row className="white textMobile">
+      <Col s={10}>
         <Row>
           <Col className="tabela" s={2}>
             LOKAL
@@ -119,7 +119,7 @@ useEffect(() => {
         </Row>
         {items}
       </Col>
-      <Col s={4}>{items2}</Col>
+      <Col s={2}>{items2}</Col>
     </Row>
   );
 };
