@@ -3,8 +3,6 @@ import React, { Component, useEffect } from "react";
 import { Button, Col, Divider, Row, NavItem,Navbar, Modal } from "react-materialize";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
-import logo from "./svg/logo.svg"
 
 const Nav = () => {
   useEffect(() => {

@@ -7,8 +7,8 @@ import 'react-materialize'
 import 'materialize-css/dist/css/materialize.min.css';
 // import * as serviceWorker from './serviceWorker';
 import './index.css';
-import 'react-leaflet';                                
-import 'leaflet/dist/leaflet.css';
+// import 'react-leaflet';                                
+// import 'leaflet/dist/leaflet.css';
 ReactDOM.render(
   <React.StrictMode>
     <App />

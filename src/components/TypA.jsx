@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Lista from "./Lista";
 import axios from "axios";
 import "materialize-css";
-import "react-leaflet";
 import { Modal, Card, Col, Row } from "react-materialize";
 import Button from "react-materialize/lib/Button";
 import firebase from "firebase/compat/app";
@@ -19,13 +18,16 @@ const Write = () => {
   const [cena, setCena] = useState();
   const [dostepnosc, setDostepnosc] = useState();
   const [lokal, setLokal] = useState();
-  // Start the fetch operation as soon as
-  // the page loads
-  // window.addEventListener("load", () => {
-  //   Fetchdata();
-  // });
+  // const [loggedin, setLoggedin] = useState();
+  const [pass, setPass] = useState();
+ 
 
-  // Fetch the required data using the get() method
+const login = () =>
+{
+  localStorage.setItem("pass", pass);
+  window.location.reload(false);
+}
+let loggedin = localStorage.getItem("pass");
   const Fetchdata = async () => {
     await db
       .collection("data")
@@ -60,23 +62,6 @@ const Write = () => {
 
     window.location.reload(false);
   };
-
-  // const updateDOSTEPNOSC = () => {
-  //   const ref = doc(db, "data", lokal);
-  //   setDoc(ref, { DOSTEPNOSC: dostepnosc }, { merge: true });
-  // };
-  // const updatePIETRO = () => {
-  //   const ref = doc(db, "data", lokal);
-  //   setDoc(ref, { PIETRO: pietro }, { merge: true });
-  // };
-  // const updateCENA = () => {
-  //   const ref = doc(db, "data", lokal);
-  //   setDoc(ref, { CENA: cena }, { merge: true });
-  // };
-  // const updateMETRAZ = () => {
-  //   const ref = doc(db, "data", lokal);
-  //   setDoc(ref, { METRAZ: metraz }, { merge: true });
-  // };
 
   const createDATA = async () => {
     const ref = doc(db, "data", lokal);
@@ -182,69 +167,81 @@ const Write = () => {
       </Row>
     );
   });
-
-  return (
-    <Row>
-      <Row className="white">
-        <Row />
-        <Col s={1}>LOKAL</Col>
-        <Col s={2}>METRAZ</Col>
-        <Col s={1}>PIETRO</Col>
-        <Col s={2}>CENA</Col>
-
-        <Col s={2}>DOSTEPNOSC</Col>
-        <Col s={4}>zmiany</Col>
-        <Row />
-        <Row />
-
-        <Col s={12}>{items}</Col>
-      </Row>{" "}
+  if (loggedin == "KrynicaLeszek22") {
+    return (
       <Row>
-        <Card>
-          <h5>
-            Dodaj nowy lokal: {lokal} / {metraz} m2/p {pietro} / {cena} pln /{" "}
-            {dostepnosc}
-          </h5>
-          <input
-            placeholder="Lokal format: M1.1"
-            onChange={(e) => setLokal(e.target.value)}
-          />
-          <input
-            placeholder="METRAZ"
-            onChange={(e) => setMetraz(e.target.value)}
-          />
+        <Row className="white">
+          <Row />
+          <Col s={1}>LOKAL</Col>
+          <Col s={2}>METRAZ</Col>
+          <Col s={1}>PIETRO</Col>
+          <Col s={2}>CENA</Col>
 
-          <input
-            placeholder="PIETRO"
-            onChange={(e) => setPietro(e.target.value)}
-          />
+          <Col s={2}>DOSTEPNOSC</Col>
+          <Col s={4}>zmiany</Col>
+          <Row />
+          <Row />
 
-          <input placeholder="CENA" onChange={(e) => setCena(e.target.value)} />
+          <Col s={12}>{items}</Col>
+        </Row>{" "}
+        <Row>
+          <Card>
+            <h5>
+              Dodaj nowy lokal: {lokal} / {metraz} m2/p {pietro} / {cena} pln /{" "}
+              {dostepnosc}
+            </h5>
+            <input
+              placeholder="Lokal format: M1.1"
+              onChange={(e) => setLokal(e.target.value)}
+            />
+            <input
+              placeholder="METRAZ"
+              onChange={(e) => setMetraz(e.target.value)}
+            />
 
-          <input
-            placeholder="DOSTEPNOSC"
-            onChange={(e) => setDostepnosc(e.target.value)}
-          />
-          <Button className="red" onClick={createDATA}>
-            Dodaj
-          </Button>
-        </Card>
+            <input
+              placeholder="PIETRO"
+              onChange={(e) => setPietro(e.target.value)}
+            />
+
+            <input
+              placeholder="CENA"
+              onChange={(e) => setCena(e.target.value)}
+            />
+
+            <input
+              placeholder="DOSTEPNOSC"
+              onChange={(e) => setDostepnosc(e.target.value)}
+            />
+            <Button className="red" onClick={createDATA}>
+              Dodaj
+            </Button>
+          </Card>
+        </Row>
+        <Row>
+          <Card>
+            <h5>Podaj lokal do usuniecia:</h5>
+
+            <input
+              placeholder="Lokal"
+              onChange={(e) => setLokal(e.target.value)}
+            />
+            <Button className="red" onClick={deleteDATA}>
+              Usun
+            </Button>
+          </Card>
+        </Row>
       </Row>
+    );
+  } else
+    return (
       <Row>
-        <Card>
-          <h5>Podaj lokal do usuniecia:</h5>
-
-          <input
-            placeholder="Lokal"
-            onChange={(e) => setLokal(e.target.value)}
-          />
-          <Button className="red" onClick={deleteDATA}>
-            Usun
-          </Button>
-        </Card>
+        <input placeholder="haslo" onChange={(e) => setPass(e.target.value)} />
+        <Button className="red" onClick={login}>
+              Zaloguj
+            </Button>
       </Row>
-    </Row>
-  );
+    );
 };
 
 export default Write;

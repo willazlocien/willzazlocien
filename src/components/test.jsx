@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Lista from "./Lista";
 import axios from "axios";
 import "materialize-css";
-import "react-leaflet";
 import { Divider, Table, Col, Row } from "react-materialize";
 import Button from "react-materialize/lib/Button";
 

@@ -1,16 +1,9 @@
 import "materialize-css";
 import React, { Component, useEffect } from "react";
 import {
-  Button,
   Col,
   MediaBox,
   Row,
-  Modal,
-  Slide,
-  Caption,
-  Table,
-  Carousel,
-  Card,
 } from "react-materialize";
 
 import img1 from "../components/img/Image 01.png";

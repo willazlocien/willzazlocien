@@ -4,8 +4,6 @@ import { Button, Col, Divider, Row } from "react-materialize";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
-import logo from "./svg/logo.svg"
-
 const Nav = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });

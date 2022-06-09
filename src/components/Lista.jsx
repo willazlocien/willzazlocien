@@ -1,15 +1,6 @@
 import React from "react";
 import { Table, Button, Modal, Row, Col,  } from "react-materialize";
 import Divider from "react-materialize/lib/Divider";
-import planparter1 from "./svg/planparter1.svg";
-import planparter2 from "./svg/planparter2.svg";
-import planparter3 from "./svg/planparter3.svg";
-import planpietro1a from "./svg/planpietro1a.svg";
-import planpoddasze1a from "./svg/planppoddasze1a.svg";
-import planpietro1b from "./svg/planpietro1b.svg";
-import planpoddasze1b from "./svg/planppoddasze1b.svg";
-import { Link } from "react-router-dom";
-
 import lokal1 from "./svg/M.1.1 .svg"
 import lokal2 from "./svg/M.1.2.svg"
 import lokal3 from "./svg/M.2.1 .svg"

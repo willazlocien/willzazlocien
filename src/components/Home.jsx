@@ -9,14 +9,13 @@ import {
   Slide,
   Caption,
   Table,
-  Card, Slider
+  Card,
+  Slider,
 } from "react-materialize";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Lista from "./Lista";
 import Iframe from "react-iframe";
 import ReactPlayer from "react-player";
-import Lokale from "./Lokale";
 import ogrod from "./svg/ogrod.svg";
 import autostrada from "./svg/autostrada.svg";
 import karkowwieliczka from "./svg/krakowwieliczka.svg";
@@ -27,9 +26,9 @@ import arrow from "./svg/arrow.svg";
 import oddanie from "./svg/oddanie.svg";
 import budowa from "./svg/budowa.svg";
 import sprzedaz from "./svg/sprzedaz.svg";
-import img1 from "../components/img/Image 01.png"
-import img2 from "../components/img/Image 04.png"
-import img3 from "../components/img/Image 15.png"
+import img1 from "../components/img/Image 01.png";
+import img2 from "../components/img/Image 04.png";
+import img3 from "../components/img/Image 15.png";
 
 const Home = () => {
   useEffect(() => {
@@ -37,7 +36,6 @@ const Home = () => {
   }, []);
 
   let lang = localStorage.getItem("lang");
-
 
   return (
     <Row className="">
@@ -55,49 +53,39 @@ const Home = () => {
             />
           </div>
           <div className="video-wrapper z-depth-5 hide-on-med-and-up">
-          <Slider
-  fullscreen={false}
-  options={{
-    duration: 500,
-    height: 600,
-    indicators: false,
-    interval: 6000
-  }}
->
-  <Slide image={<img alt="" src={img1}/>}>
-    <Caption placement="center">
-      <h3>
-        Nowa inwestycja
-      </h3>
-      <h5 className="light grey-text text-lighten-3">
-        Krynica-Zdrój - Willa Złocień
-      </h5>
-    </Caption>
-  </Slide>
-  <Slide image={<img alt="" src={img2}/>}>
-    <Caption placement="left">
-      <h3>
-        Etap I
-      </h3>
-      <h5 className="light grey-text text-lighten-3">
-       Rewitalziacja Willi
-      </h5>
-    </Caption>
-  </Slide>
-  <Slide image={<img alt="" src={img3}/>}>
-    <Caption placement="right">
-      <h3>
-       Etap II
-      </h3>
-      <h5 className="light grey-text text-lighten-3">
-       Rozbudowa
-      </h5>
-    </Caption>
-  </Slide>
-
-</Slider>
+            <Slider
+              fullscreen={false}
+              options={{
+                duration: 500,
+                height: 600,
+                indicators: false,
+                interval: 6000,
+              }}
+            >
+              <Slide image={<img alt="" src={img1} />}>
+                <Caption placement="center">
+                  <h3>Nowa inwestycja</h3>
+                  <h5 className="light grey-text text-lighten-3">
+                    Krynica-Zdrój - Willa Złocień
+                  </h5>
+                </Caption>
+              </Slide>
+              <Slide image={<img alt="" src={img2} />}>
+                <Caption placement="left">
+                  <h3>Etap I</h3>
+                  <h5 className="light grey-text text-lighten-3">
+                    Rewitalziacja Willi
+                  </h5>
+                </Caption>
+              </Slide>
+              <Slide image={<img alt="" src={img3} />}>
+                <Caption placement="right">
+                  <h3>Etap II</h3>
+                  <h5 className="light grey-text text-lighten-3">Rozbudowa</h5>
+                </Caption>
+              </Slide>
+            </Slider>
           </div>
-       
         </Col>
       </Row>
       <img src={arrow} width="100%" />
@@ -112,22 +100,29 @@ const Home = () => {
         >
           <Card>
             <h5>
-            Willa Złocień, Krynica-Zdrój
+              Willa Złocień, Krynica-Zdrój
               <Divider />
             </h5>
             <Row />
             <Row />
             <Row />
-            <Row><div className="left-align  ">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </div>
+            <Row>
+              <div className="left-align  ">
+                Przedstawiamy Państwu "Will Złocień" – naszą najnowszą
+                inwestycję zlokalizowaną w Krynicy na wschodnim stoku Gory
+                Parkowej!
+                <br/>
+                Budynek położony jest w rewelacyjnej lokalizacji z świetnym dojazdem. Jest idealne miejsce dla osób ceniących sobie ciszę, spokój i naturę.
+                <br/>Wszystkich zainteresowanych ofertą prosimy o kontakt
+                mailowy lub telefoniczny.{" "}
+              </div>
               <Col m={6} s={12}>
-                
                 <Row />
                 <Row>
                   <Col s={4}>
                     <img src={autostrada} width="60%" />
-                    <br />Górskie trasy rowerowe i piesze
+                    <br />
+                    Górskie trasy rowerowe i piesze
                   </Col>
                   <Col s={4}>
                     <img src={karkowwieliczka} width="60%" />
@@ -158,8 +153,8 @@ const Home = () => {
               </Col>
 
               <Col m={6} s={12}>
-                <Row/>
-            <img src={img1} width="100%" />
+                <Row />
+                <img src={img1} width="100%" />
               </Col>
             </Row>
           </Card>
@@ -181,8 +176,11 @@ const Home = () => {
             <Row>
               <Col m={6} s={12}>
                 <div className="left-align  ">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                  <br />
+                  Miasto położone jest w Beskidzie Sądeckim, w dolinie potoku
+                  Kryniczanka i jego dopływów. Krynicę otaczają wzgórza Góry
+                  Parkowej, Krzyżowej, Jasiennika. Miasto leży na terenie
+                  Popradzkiego Parku Krajobrazowego, stanowi bazę wypadową w
+                  okoliczne góry. <br />
                   <br />
                   <br />
                   <Row>
@@ -190,15 +188,13 @@ const Home = () => {
                     <Col m={8}>
                       <div>
                         <h5>
-                          <li>Centrum Krynicy - xx km</li>
+                          <li>Centrum Krynicy - 1,3 km</li>
                           <br />
-                          <li>Stacja Kolejowa xx - xxkm</li>
+                          <li>Zrdeko "Ciurkacz" xx - 50 m</li>
                           <br />
                           <li>Góra Parkowa - 2 km</li>
                           <br />
-                          <li>sklep spożywczy - xx km</li>
-                          <br />
-                          <li>Paczkomat Inpost - xx m</li>
+                          <li>sklep spożywczy - 100 m</li>
                           <br />
                         </h5>
                       </div>
@@ -206,7 +202,9 @@ const Home = () => {
                   </Row>
                 </div>
                 <div className="left-align">
-                Uzdrowisko Krynica-Zdrój znajduje się we wschodniej części Pasma Jaworzyny Krynickiej – jednego z dwóch pasm Beskidu Sądeckiego.
+                  Uzdrowisko Krynica-Zdrój znajduje się we wschodniej części
+                  Pasma Jaworzyny Krynickiej – jednego z dwóch pasm Beskidu
+                  Sądeckiego.
                 </div>
               </Col>
               <Col m={6} s={12}>
@@ -241,30 +239,42 @@ const Home = () => {
               <Col m={6} s={12}>
                 <div className="left-align  ">
                   <h5>Historia miejsca</h5>
-                "Idea development prezentuje ..... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                 Budynek został wybudowany na początku XX w. Służył jako baza noclegowa dla osób odwiedzających Krynicę, a przede wszytkim Gorę Parkową. 
                   <br />
+                  
                   <br />
-                  <br />
-                
                 </div>
                 <div className="left-align">
-                <h5>Kluczowe aspekty inwestycji</h5>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, semollit anim id est laborum."
-                <h5>
-                <li>garaż</li><br/>
-                <li>miejsca parkingowe zewnetrzne</li><br/>
-                <li>basen</li><br/>
-                <li>tarasy</li><br/></h5>
+                  <h5>Kluczowe aspekty inwestycji</h5>
+                  
+                  <h5>
+                   
+                    <li>rewelacyjna lokalizacja</li>
+                    <br />
+                    <li>gruntowna rewitalziacja budynku willi</li>
+                    <br />
+                    <li>miejsca parkingowe zewnetrzne</li>
+                    <br />
+                    <li>winda - 2 etap</li>
+                    <br />
+                    <li>basen - 2 etap</li>
+                    <br />
+                    <li>tarasy - 2 etap</li> <li>garaż - 2 etap</li>
+                    <br />
+                    <br />
+                  </h5>
                 </div>
               </Col>
               <Col m={6} s={12}>
-              <Iframe url="https://sketchfab.com/models/0bb9d7472cda434a93534511dc88f849/embed"
-     width="90%"
-       height="500px"
-      id="videoIframe"
-      className="imgCarousel"
-      display="initial"
-      position="relative"/>
+                <Iframe
+                  url="https://sketchfab.com/models/0bb9d7472cda434a93534511dc88f849/embed"
+                  width="90%"
+                  height="500px"
+                  id="videoIframe"
+                  className="imgCarousel"
+                  display="initial"
+                  position="relative"
+                />
               </Col>
             </Row>
           </Card>
@@ -282,19 +292,16 @@ const Home = () => {
             </h5>
             <Row />
             <Col s={12} m={4}>
-              <img  className="red" src={sprzedaz} width="70%" />
+              <img className="red" src={sprzedaz} width="70%" />
               <br />
-         
             </Col>
             <Col s={12} m={4}>
               <img className="red" src={budowa} width="70%" />
               <br />
-     
             </Col>
             <Col s={12} m={4}>
               <img className="red" src={oddanie} width="70%" />
               <br />
-           
             </Col>
             <Row>
               <Col m={6} s={12}>
