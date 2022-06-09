@@ -50,7 +50,7 @@ class Contact extends React.Component {
               >
                 Google Maps
               </Button>
-              <a className="btn-large red " href="tel:+ 48601437453">
+              <a className="btn-large red " href="tel:+ 48794055035 ">
                 Call us
               </a>
               {/* <CardPanel className="white z-depth-2">
@@ -106,7 +106,7 @@ class Contact extends React.Component {
                 31-013 Krakow
                 <br />T : +48 xxxxxxxxxxxxx
                 <br />
-                E: leszek.kraus@ideadevelopment.pl
+                E: Leszek.kraus@poczta.onet.pl
               </CardPanel>
             </Col>
 
@@ -147,7 +147,7 @@ class Contact extends React.Component {
               >
                 Google Maps
               </Button>
-              <a className="btn-large black " href="tel:+ 48601437453">
+              <a className="btn-large black " href="tel:+ 48794055035 ">
                 zadzwoń
               </a>
               {/* <CardPanel className="white z-depth-2">
@@ -180,9 +180,9 @@ class Contact extends React.Component {
                 Rakowicka 15
                 <br />
                 31-511 Krakow
-                <br />T : +48 601437453
+                <br />T : +48 794055035 
                 <br />
-                E: leszek.kraus@ideadevelopment.pl
+                E: Leszek.kraus@poczta.onet.pl
               </CardPanel>
             </Col>
 

@@ -64,18 +64,25 @@ background-color: rgba(255, 255, 255, 0.5);
 .btnhome1{
   position: fixed;
   right:2vw;
-  top: 80vh;
+  top: 75vh;
   border-radius: 20px;
   width: 10vw;
 }
 .btnhome2{
   position: fixed;
   right:2vw;
-  top: 85vh;
+  top: 80vh;
   border-radius: 20px;
   width: 10vw;
 }
 .btnhome3{
+  position: fixed;
+  right:2vw;
+  top: 85vh;
+  border-radius: 20px;
+  width: 10vw;
+}
+.btnhome4{
   position: fixed;
   right:2vw;
   top: 90vh;

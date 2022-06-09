@@ -2,25 +2,16 @@ import "materialize-css";
 import React, { Component, useEffect } from "react";
 import {
   Card,
-  Button,
   Col,
   Divider,
   Row,
-  Slider,
-  Slide,
-  Caption,
-  Modal,
-  Table,
-  Carousel,
 } from "react-materialize";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Lista from "./Lista";
-import Lista2 from "./Lista2";
-import axoLokale from "./img/axoLokale.webp";
-import axoLokale1 from "./img/axoLokale1.webp";
-import axoLokale2 from "./img/axoLokale2.webp";
-import axoLokale3 from "./img/axoLokale3.webp";
+import pietro0 from "./svg/PIETRO1.svg";
+import pietro1 from "./svg/PIETRO2.svg";
+import pietro2 from "./svg/PIETRO3.svg";
+import pietro3 from "./svg/PIETRO4.svg";
 import Test from "./test";
 const Lokale = () => {
   useEffect(() => {
@@ -36,50 +27,43 @@ const Lokale = () => {
         data-aos-duration="2000"
         className="hoverable z-depth-5 white"
       >
-        <Row>
-          <Col s={12} m={8}>
-            {" "}
-            <Carousel
-              carouselId="Carousel-2"
-              className="white-text center car"
-              options={{
-                fullWidth: true,
-                indicators: true,
-              }}
-            >
-              <div className="black">
-                <img src={axoLokale} width="100%" />
-              </div>
-              <div className="black">
-                <img src={axoLokale1} width="100%" />
-              </div>
-              <div className="black">
-                <img src={axoLokale2} width="100%" />
-              </div>
-              <div className="black">
-                <img src={axoLokale3} width="100%" />
-              </div>
-            </Carousel>
-          </Col>
-          <Col s={12} m={4}>
-            <div className="left-align">
+        <Card>
+          
+        <div className="center">
               <h3>
-                Układ Lokali
+                Etap 1
                 <Divider />
               </h3>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus
+              Etap 1 obejmuje renowacje Willi Złocień
+              <br/>
+              Podane ceny bruuto
+              <br/>
+              Powierzchnie mieszkań po wykonaniu remontu mogą róznić się +/- 1.5 m2 od powierzchni oferowanej, po obmiarze wykonawczym nastąpi korekta ceny w zależności od powierzchni
               <Row />
             </div>
-          </Col>{" "}
-        </Row>
+            <Row>
+          <Col s={12} m={3}>
+                <img src={pietro0} width="100%" />
+                Piętro 0
+              </Col>
+              
+              <Col s={12} m={3}>
+                <img src={pietro1} width="100%" /> Piętro 1
+              </Col>
+             
+              <Col s={12} m={3}>
+                <img src={pietro2} width="100%" /> Piętro 2
+              </Col>
+             
+              <Col s={12} m={3}>
+                <img src={pietro3} width="100%" />
+                Piętro 3
+              </Col>
+            
+           </Row>
+          
+          {" "}
+        </Card>
       </div>{" "}
       <Card className="z-depth-5 white">
         <h5>
@@ -90,7 +74,7 @@ const Lokale = () => {
       </Card>
       <Card className="z-depth-5 white">
         <h5>
-          Etap II - Rozbudowa <Divider />
+          Etap II - Rozbudowa planowana na 2022/2023 rok <Divider />
         </h5>
         <Row />
       </Card>

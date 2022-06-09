@@ -3,8 +3,17 @@ import React, { useState, useEffect } from "react";
 import Lista from "./Lista";
 import axios from "axios";
 import "materialize-css";
-import { Divider, Table, Col, Row } from "react-materialize";
+import { Divider, Modal, Col, Row } from "react-materialize";
 import Button from "react-materialize/lib/Button";
+import lokal1 from "./svg/M.1.1 .svg"
+import lokal2 from "./svg/M.1.2.svg"
+import lokal3 from "./svg/M.2.1 .svg"
+import lokal4 from "./svg/M.2.2.svg"
+import lokal5 from "./svg/M.2.3.svg"
+import lokal6 from "./svg/M.3.2.svg"
+import lokal7 from "./svg/M.3.3.svg"
+import lokal8 from "./svg/M.1.1 .svg"
+import lokal9 from "./svg/M.1.1 .svg"
 
 const Read = () => {
  
@@ -14,9 +23,9 @@ useEffect(() => {
     Fetchdata();
   }, 1); //miliseconds
 }, []);
- window.addEventListener("load", () => {
-    Fetchdata();
-  });
+//  window.addEventListener("load", () => {
+//     Fetchdata();
+//   });
  
  
   // Fetch the required data using the get() method
@@ -34,23 +43,46 @@ useEffect(() => {
   };
 
   const items = info.map((data) => {
+    if (data.DOSTEPNOSC == "WOLNY")
     return (
-      <Row className="hoverable">
-        <Col className="tabela" s={2}>
+      <Row className="hoverable green-text">
+         <Col className="tabela" s={2}>
           {data.LOKAL}
         </Col>
-        <Col className="tabela" s={3}>
+        <Col className="tabela" s={2}>
           {data.METRAZ}
         </Col>
         <Col className="tabela" s={1}>
           {data.PIETRO}
         </Col>
-        <Col className="tabela" s={2}>
+        <Col className="tabela" s={3}>
           {data.CENA}
         </Col>
         <Col className="tabela" s={4}>
           {data.DOSTEPNOSC}
         </Col>
+        
+      </Row>
+    )
+    else
+    return (
+      <Row className="hoverable red-text">
+        <Col className="tabela" s={2}>
+          {data.LOKAL}
+        </Col>
+        <Col className="tabela" s={2}>
+          {data.METRAZ}
+        </Col>
+        <Col className="tabela" s={1}>
+          {data.PIETRO}
+        </Col>
+        <Col className="tabela" s={3}>
+          {data.CENA}
+        </Col>
+        <Col className="tabela" s={4}>
+          {data.DOSTEPNOSC}
+        </Col>
+      
       </Row>
     );
   });
@@ -80,13 +112,13 @@ useEffect(() => {
           <Col className="tabela" s={2}>
             LOKAL
           </Col>
-          <Col className="tabela" s={3}>
+          <Col className="tabela" s={2}>
             METRAZ
           </Col>
           <Col className="tabela" s={1}>
             PIETRO
           </Col>
-          <Col className="tabela" s={2}>
+          <Col className="tabela" s={3}>
             CENA
           </Col>
 

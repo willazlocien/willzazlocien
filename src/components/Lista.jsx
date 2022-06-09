@@ -10,48 +10,12 @@ import lokal6 from "./svg/M.3.2.svg"
 import lokal7 from "./svg/M.3.3.svg"
 import lokal8 from "./svg/M.1.1 .svg"
 import lokal9 from "./svg/M.1.1 .svg"
-let baseURL =
-  "https://raw.githubusercontent.com/galeriapodsloncem/3dstrona/master/babylonjs-app/public/assets/";
+
 const Lista = [
   {
-    Rzut: (
-      <Modal
-      className="modalid"
-        actions={[
-          <Button flat modal="close" node="button" disabledwaves="green">
-            Zamknij
-          </Button>,
-        ]}
-        bottomSheet={false}
-        fixedFooter={false}
-        header={"Rzut "}
-        id="M1"
-        open={false}
-        options={{
-          dismissible: true,
-          endingTop: "10%",
-          inDuration: 250,
-          onCloseEnd: null,
-          onCloseStart: null,
-          onOpenEnd: null,
-          onOpenStart: null,
-          opacity: 0.5,
-          outDuration: 250,
-          preventScrolling: true,
-          startingTop: "4%",
-        }}
-        trigger={
-          <Button className="red" node="button"  disabled small>
-            Rzut
-          </Button>
-        }
-      >
-        <Row>
-          <Divider />  <img src={lokal1} width="100%" />
-         
-        </Row>
-      </Modal>
-    ),
+    Rzut: (<Row>RZUT</Row>)
+      
+    
   },
   {
     Rzut: (

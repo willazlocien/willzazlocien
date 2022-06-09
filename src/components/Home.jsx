@@ -1,14 +1,11 @@
 import "materialize-css";
 import React, { Component, useEffect } from "react";
 import {
-  Button,
   Col,
   Divider,
   Row,
-  Modal,
   Slide,
   Caption,
-  Table,
   Card,
   Slider,
 } from "react-materialize";
@@ -23,9 +20,6 @@ import silence from "./svg/silence.svg";
 import windows from "./svg/windows.svg";
 import layout from "./svg/layout.svg";
 import arrow from "./svg/arrow.svg";
-import oddanie from "./svg/oddanie.svg";
-import budowa from "./svg/budowa.svg";
-import sprzedaz from "./svg/sprzedaz.svg";
 import img1 from "../components/img/Image 01.png";
 import img2 from "../components/img/Image 04.png";
 import img3 from "../components/img/Image 15.png";
@@ -44,7 +38,7 @@ const Home = () => {
           <div className="video-wrapper z-depth-5 hide-on-small-only">
             <ReactPlayer
               // className="react-player"
-              url="https://youtu.be/v8f9e9BM33I"
+              url="https://youtu.be/eRbJY64wlQo"
               playing={true}
               muted={true}
               width="100%"
@@ -109,12 +103,15 @@ const Home = () => {
             <Row>
               <div className="left-align  ">
                 Przedstawiamy Państwu "Will Złocień" – naszą najnowszą
-                inwestycję zlokalizowaną w Krynicy na wschodnim stoku Gory
+                inwestycję zlokalizowaną w Krynicy-Zdrój na wschodnim stoku Gory
                 Parkowej!
-                <br/>
-                Budynek położony jest w rewelacyjnej lokalizacji z świetnym dojazdem. Jest idealne miejsce dla osób ceniących sobie ciszę, spokój i naturę.
-                <br/>Wszystkich zainteresowanych ofertą prosimy o kontakt
-                mailowy lub telefoniczny.{" "}
+                <br />
+                Budynek położony jest w rewelacyjnej lokalizacji z świetnym
+                dojazdem. Jest idealne miejsce dla osób ceniących sobie ciszę,
+                spokój i naturę.
+                <br />
+                Wszystkich zainteresowanych ofertą prosimy o kontakt mailowy lub
+                telefoniczny.{" "}
               </div>
               <Col m={6} s={12}>
                 <Row />
@@ -177,11 +174,16 @@ const Home = () => {
               <Col m={6} s={12}>
                 <div className="left-align  ">
                   Miasto położone jest w Beskidzie Sądeckim, w dolinie potoku
-                  Kryniczanka i jego dopływów. Krynicę otaczają wzgórza Góry
-                  Parkowej, Krzyżowej, Jasiennika. Miasto leży na terenie
+                  Kryniczanka i jego dopływów. Krynica-Zdrój otaczają wzgórza
+                  Góry Parkowej, Krzyżowej, Jasiennika. Miasto leży na terenie
                   Popradzkiego Parku Krajobrazowego, stanowi bazę wypadową w
                   okoliczne góry. <br />
                   <br />
+                  <div className="left-align">
+                  Uzdrowisko Krynica-Zdrój znajduje się we wschodniej części
+                  Pasma Jaworzyny Krynickiej – jednego z dwóch pasm Beskidu
+                  Sądeckiego.
+                </div>
                   <br />
                   <Row>
                     <Col m={2}></Col>
@@ -190,22 +192,18 @@ const Home = () => {
                         <h5>
                           <li>Centrum Krynicy - 1,3 km</li>
                           <br />
-                          <li>Zrdeko "Ciurkacz" xx - 50 m</li>
+                          <li>Zrdeko "Ciurkacz"  - 50 m</li>
                           <br />
                           <li>Góra Parkowa - 2 km</li>
                           <br />
-                          <li>sklep spożywczy - 100 m</li>
+                          <li>Sklep Spożywczy - 100 m</li>
                           <br />
                         </h5>
                       </div>
                     </Col>
                   </Row>
                 </div>
-                <div className="left-align">
-                  Uzdrowisko Krynica-Zdrój znajduje się we wschodniej części
-                  Pasma Jaworzyny Krynickiej – jednego z dwóch pasm Beskidu
-                  Sądeckiego.
-                </div>
+                
               </Col>
               <Col m={6} s={12}>
                 <Iframe
@@ -233,36 +231,60 @@ const Home = () => {
               O budynku <Divider />
             </h5>
             <Row />
-            <Row />
-            <Row />
+            
             <Row>
               <Col m={6} s={12}>
                 <div className="left-align  ">
                   <h5>Historia miejsca</h5>
-                 Budynek został wybudowany na początku XX w. Służył jako baza noclegowa dla osób odwiedzających Krynicę, a przede wszytkim Gorę Parkową. 
+                  Budynek został wybudowany na początku XX w. Służył jako baza
+                  noclegowa dla osób odwiedzających Krynicę-Zdrój, a przede
+                  wszytkim Gorę Parkową.
                   <br />
-                  
                   <br />
                 </div>
                 <div className="left-align">
                   <h5>Kluczowe aspekty inwestycji</h5>
+                  <Row />
+            <Row />
+                  <li>rewelacyjna lokalizacja</li>
+                  <br />
+                  <li>gruntowna rewitalziacja budynku willi - 1 etap</li>
+                  <br />
+                  <li>miejsca parkingowe zewnetrzne - 1 etap</li>
+                  <br />
+                  <li>Mieszkania objęte są 8% VAT</li>
+                  <br />
+                  <li>
+                    Sprzedarz nie objęta jest ustawa deweloperską dla etapu 1,
+                    gdyż sprzedawane są wyodrębnione lokale mieszkalne
+                  </li>
+                  <br />
+                  <li>
+                    Wspólnota zatrudni zewnętrznego administratora dla
+                    zarządzania budynkiem
+                  </li>
+                  <br />
+                  <li>
+                    Lokale oferowane posiadają zaświadczenie o samodzielności
+                    lokali
+                  </li>
+                  <br />
+                  <li>winda - 1 etap</li>
+                  <br />
+                  <li>basen - 2 etap</li>
+                  <br />
+                  <li>integracja kotłowni z panelami słonecznymi - 2 etap</li>
+                  <br />
+                  <li>tarasy - 2 etap</li>
+                  <br />
+                  <li>mieszkania w stanie deweloperskim</li>
+                  <br />
+                  <li>
+                    Możliwość wykupu miejsc parkingowych - cena 32 500 pln netto
+                  </li>
+                  <br />
                   
-                  <h5>
-                   
-                    <li>rewelacyjna lokalizacja</li>
-                    <br />
-                    <li>gruntowna rewitalziacja budynku willi</li>
-                    <br />
-                    <li>miejsca parkingowe zewnetrzne</li>
-                    <br />
-                    <li>winda - 2 etap</li>
-                    <br />
-                    <li>basen - 2 etap</li>
-                    <br />
-                    <li>tarasy - 2 etap</li> <li>garaż - 2 etap</li>
-                    <br />
-                    <br />
-                  </h5>
+                  <li>garaż - 2 etap</li>
                 </div>
               </Col>
               <Col m={6} s={12}>
@@ -289,26 +311,26 @@ const Home = () => {
           <Card className="z-depth-5">
             <h5>
               Terminy <Divider />
-            </h5>
-            <Row />
-            <Col s={12} m={4}>
-              <img className="red" src={sprzedaz} width="70%" />
-              <br />
-            </Col>
-            <Col s={12} m={4}>
-              <img className="red" src={budowa} width="70%" />
-              <br />
-            </Col>
-            <Col s={12} m={4}>
-              <img className="red" src={oddanie} width="70%" />
-              <br />
-            </Col>
-            <Row>
-              <Col m={6} s={12}>
-                <div className="left-align  "></div>
+              <Row />
+              <Col s={12} m={4}>
+                Zakończenie Etapu 1 - planowane na 2 kwartał 2023 roku
+                <br />
               </Col>
-              <Col m={6} s={12}></Col>
-            </Row>
+              <Col s={12} m={4}>
+                Zakończenie Etapu 1 - planowane na rok 2023/2022
+                <br />
+              </Col>
+              <Col s={12} m={4}>
+                Rzopoczęcie sprzedarzy 1 kwartał 2022 rok
+                <br />
+              </Col>
+              <Row>
+                <Col m={6} s={12}>
+                  <div className="left-align  "></div>
+                </Col>
+                <Col m={6} s={12}></Col>
+              </Row>
+            </h5>
           </Card>
         </div>
       </Row>
