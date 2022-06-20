@@ -46,7 +46,7 @@ useEffect(() => {
         <Col className="tabela" s={1}>
           {data.PIETRO}
         </Col>
-        <Col className="tabela" s={3}>
+        <Col className="tabela" s={2}>
           {data.CENA}
         </Col>
         <Col className="tabela" s={4}>
@@ -67,7 +67,7 @@ useEffect(() => {
         <Col className="tabela" s={1}>
           {data.PIETRO}
         </Col>
-        <Col className="tabela" s={3}>
+        <Col className="tabela" s={2}>
           {data.CENA}
         </Col>
         <Col className="tabela" s={4}>
@@ -104,12 +104,12 @@ useEffect(() => {
             LOKAL
           </Col>
           <Col className="tabela" s={2}>
-            METRAZ
+            M2
           </Col>
           <Col className="tabela" s={1}>
-            PIETRO
+            PIE<br/>TRO
           </Col>
-          <Col className="tabela" s={3}>
+          <Col className="tabela" s={2}>
             CENA
           </Col>
 

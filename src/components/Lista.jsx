@@ -85,7 +85,7 @@ const Lista = [
           startingTop: "4%",
         }}
         trigger={
-          <Button className="red" node="button"   small>
+          <Button className="red" node="button"  small>
             Rzut
           </Button>
         }

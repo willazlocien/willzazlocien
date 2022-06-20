@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  primary-color: #000000 !important;
+  overflow-x: hidden;
 }
 
 .App-logo {
