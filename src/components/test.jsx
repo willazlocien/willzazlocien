@@ -106,8 +106,11 @@ useEffect(() => {
           <Col className="tabela" s={2}>
             M2
           </Col>
-          <Col className="tabela" s={1}>
-            PIE<br/>TRO
+          <Col className="tabela hide-on-med-and-up" s={1}>
+            PIĘ<br/>TRO
+          </Col>
+          <Col className="tabela hide-on-small-only" s={1}>
+            PIĘTRO
           </Col>
           <Col className="tabela" s={2}>
             CENA
