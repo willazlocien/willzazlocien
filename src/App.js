@@ -6,16 +6,29 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
-import Other from "./components/Other";
 import Portfolio from "./components/Portfolio";
 import Offer from "./components/Offer";
 import Nav from "./components/Nav";
 import NavMobile from "./components/NavMobile";
 import TypA from "./components/TypA";
 import test from "./components/test";
+import DocumentMeta from 'react-document-meta';
+
 function App() {
+  const meta = {
+    title: "willa zlocien",
+    description: "willa zlocien mieszkania",
+    canonical: "https://willzazlocien.netlify.app",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords: "willa zlocien, Krynica-zdroj, nowe mieszkania, budowa",
+      },
+    },
+  };
   return (
-    <div className="App">
+  <DocumentMeta {...meta}>  <div className="App">
+      
       <Row>
         <Col s={12} m={10} l={8} push="m1 l2 s0" className="appbg">
           <BrowserRouter>
@@ -269,7 +282,7 @@ function App() {
             </p>
           </Modal>
       </div>
-    </div>
+   </div> </DocumentMeta>
   );
 }
 
