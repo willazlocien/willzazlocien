@@ -1,9 +1,9 @@
 import db from "./firebase.config";
 import React, { useState, useEffect } from "react";
 import Lista from "./Lista";
-import axios from "axios";
+
 import "materialize-css";
-import { Divider, Modal, Col, Row } from "react-materialize";
+import {  Col, Row } from "react-materialize";
 
 
 const Read = () => {

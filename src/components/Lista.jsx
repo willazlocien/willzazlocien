@@ -1,15 +1,20 @@
 import React from "react";
 import { Table, Button, Modal, Row, Col,  } from "react-materialize";
 import Divider from "react-materialize/lib/Divider";
-import lokal1 from "./svg/M.1.1 .svg"
-import lokal2 from "./svg/M.1.2.svg"
-import lokal3 from "./svg/M.2.1 .svg"
-import lokal4 from "./svg/M.2.2.svg"
-import lokal5 from "./svg/M.2.3.svg"
-import lokal6 from "./svg/M.3.2.svg"
-import lokal7 from "./svg/M.3.3.svg"
-import lokal8 from "./svg/M.1.1 .svg"
-import lokal9 from "./svg/M.1.1 .svg"
+import lokal11 from "./svg/M.1.1 .svg"
+import lokal12 from "./svg/M.1.2.svg"
+import lokal21 from "./svg/M.2.1 .svg"
+import lokal22 from "./svg/M.2.2.svg"
+import lokal23 from "./svg/M.2.3.svg"
+import lokal24 from "./svg/M.2.3.svg"
+import lokal31 from "./svg/M.3.2.svg"
+import lokal32 from "./svg/M.3.2.svg"
+import lokal33 from "./svg/M.3.3.svg"
+import lokal34 from "./svg/M.3.3.svg"
+import lokal41 from "./svg/M.3.3.svg"
+import lokal42 from "./svg/M.3.3.svg"
+import lokal43 from "./svg/M.3.3.svg"
+
 
 const Lista = [
   {
@@ -51,7 +56,7 @@ const Lista = [
         }
       >
         <Row>
-          <Divider />  <img src={lokal1} width="100%" />
+          <Divider />  <img src={lokal11} width="100%" />
          
         </Row>
       </Modal>
@@ -91,7 +96,7 @@ const Lista = [
         }
       >
         <Row>
-          <Divider />  <img src={lokal2} width="100%" />
+          <Divider />  <img src={lokal12} width="100%" />
          
         </Row>
       </Modal>
@@ -131,7 +136,7 @@ const Lista = [
         }
       >
         <Row>
-          <Divider />  <img src={lokal3} width="100%" />
+          <Divider />  <img src={lokal21} width="100%" />
          
         </Row>
       </Modal>
@@ -171,7 +176,7 @@ const Lista = [
         }
       >
         <Row>
-          <Divider />  <img src={lokal4} width="100%" />
+          <Divider />  <img src={lokal22} width="100%" />
          
         </Row>
       </Modal>
@@ -211,56 +216,333 @@ const Lista = [
         }
       >
         <Row>
-          <Divider />  <img src={lokal5} width="100%" />
-         
-        </Row>
-      </Modal>
-    ),
-  },
-  {
-    Rzut: (
-      <Modal
-      className="modalid"
-        actions={[
-          <Button flat modal="close" node="button" waves="green">
-            Zamknij
-          </Button>,
-        ]}
-        bottomSheet={false}
-        fixedFooter={false}
-        header={"Rzut "}
-        id="M1"
-        open={false}
-        options={{
-          dismissible: true,
-          endingTop: "10%",
-          inDuration: 250,
-          onCloseEnd: null,
-          onCloseStart: null,
-          onOpenEnd: null,
-          onOpenStart: null,
-          opacity: 0.5,
-          outDuration: 250,
-          preventScrolling: true,
-          startingTop: "4%",
-        }}
-        trigger={
-          <Button className="red" node="button"   small>
-            Rzut
-          </Button>
-        }
-      >
-        <Row>
-          <Divider />  <img src={lokal6} width="100%" />
+          <Divider />  <img src={lokal23} width="100%" />
          
         </Row>
       </Modal>
     ),
   },
   
- 
-  
- 
+  {
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Rzut "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button disabled className="red" node="button"   small>
+            Rzut
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />  <img src={lokal24} width="100%" />
+         
+        </Row>
+      </Modal>
+    ),
+  },
+  {
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Rzut "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button disabled className="red" node="button"   small>
+            Rzut
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />  <img src={lokal31} width="100%" />
+         
+        </Row>
+      </Modal>
+    ),
+  },
+  {
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Rzut "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button className="red" node="button"   small>
+            Rzut
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />  <img src={lokal32} width="100%" />
+         
+        </Row>
+      </Modal>
+    ),
+  },
+  {
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Rzut "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button className="red" node="button"   small>
+            Rzut
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />  <img src={lokal33} width="100%" />
+         
+        </Row>
+      </Modal>
+    ),
+  },
+  {
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Rzut "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button disabled className="red" node="button"   small>
+            Rzut
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />  <img src={lokal34} width="100%" />
+         
+        </Row>
+      </Modal>
+    ),
+  },
+  {
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Rzut "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button disabled className="red" node="button"   small>
+            Rzut
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />  <img src={lokal23} width="100%" />
+         
+        </Row>
+      </Modal>
+    ),
+  },
+  {
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Rzut "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button disabled className="red" node="button"   small>
+            Rzut
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />  <img src={lokal23} width="100%" />
+         
+        </Row>
+      </Modal>
+    ),
+  },
+  {
+    Rzut: (
+      <Modal
+      className="modalid"
+        actions={[
+          <Button flat modal="close" node="button" waves="green">
+            Zamknij
+          </Button>,
+        ]}
+        bottomSheet={false}
+        fixedFooter={false}
+        header={"Rzut "}
+        id="M1"
+        open={false}
+        options={{
+          dismissible: true,
+          endingTop: "10%",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          opacity: 0.5,
+          outDuration: 250,
+          preventScrolling: true,
+          startingTop: "4%",
+        }}
+        trigger={
+          <Button disabled className="red" node="button"   small>
+            Rzut
+          </Button>
+        }
+      >
+        <Row>
+          <Divider />  <img src={lokal23} width="100%" />
+         
+        </Row>
+      </Modal>
+    ),
+  },
   
 ];
 export default Lista;

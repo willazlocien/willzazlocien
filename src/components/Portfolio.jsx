@@ -16,19 +16,19 @@ const Portfolio = () => {
     return (
       <Row className="">
         <div
-          data-aos="fade-left"
-          data-aos-duration="3000"
-          className="hoverable z-depth-2"
+          // data-aos="fade-left"
+          // data-aos-duration="3000"
+          // className="hoverable z-depth-2"
         >
-          <Col m={10} s={12} push="m1">
-            <Card header={<CardTitle image={arch} />} horizontal>
-              <h5>
-                Etap I - Willa Złocień <Divider />
+          <Col l={8} s={12} push="l2">
+            <Card className="shadow" header={<CardTitle image={arch} />} horizontal>
+              <h5 classname="right-align">
+                Etap I - Remont Willi Złocień  <Divider />
               </h5>
               <div className="left-align">
               <li>Winda</li>
-              <li>Wydzielone miejsca parkingowe</li>
-              <li>Kotłownia</li>
+              <li>Wydzielone miejsca postojowe</li>
+              <li>Kotłownia gazowa</li>
               <li>Stan deweloperski, ściany malowane na biało</li>
               </div>{" "}
             </Card>
@@ -36,39 +36,39 @@ const Portfolio = () => {
         </div>
         <Row />
         <div
-          data-aos="fade-right"
-          data-aos-duration="3000"
-          className="hoverable z-depth-2"
+          // data-aos="fade-right"
+          // data-aos-duration="3000"
+          // className="hoverable z-depth-2"
         >
-          <Col m={10} s={12} push="m1">
-            <Card header={<CardTitle image={arch} />} horizontal>
-              <h5>
+          <Col l={8} s={12} push="l2">
+            <Card className="shadow"  header={<CardTitle image={arch} />} horizontal>
+              <h5 classname="right-align">
                 Etap II - Rozbudowa <Divider />
               </h5>
               <div className="left-align">
-                <li>Garaż</li>
-                <li>Basen dla mieszkanców</li>
-                <li>Lokale z tarasem</li>
+                <li>Garaż podziemny</li>
+                <li>Basen dla mieszkańców</li>
+                <li>Lokale z tarasami</li>
                 <li>Duże przeszklenia</li>
-                <li>Panele Słoneczne</li>
+                <li>Pompa ciepła</li>
               </div>{" "}
             </Card>
           </Col>
         </div>
         <Row />
         <div
-          data-aos="fade-right"
-          data-aos-duration="3000"
-          className="hoverable z-depth-2"
+          // data-aos="fade-right"
+          // data-aos-duration="3000"
+          // className="hoverable z-depth-2"
         >
-          <Col m={10} s={12} push="m1">
-            <Card header={<CardTitle image={ogrod} />} horizontal>
-              <h5>
-                Teren wokół Willi ogrodzony i zalesiony
+          <Col l={8} s={12} push="l2">
+            <Card className="shadow" header={<CardTitle image={ogrod} />} horizontal>
+              <h5 classname="right-align">
+                Teren wokół Willi Złocień ogrodzony i zalesiony
                 <Divider />
               </h5>
               <div className="left-align">
-                <li>Wyznaczone miejsca parkingowe</li>
+                <li>Wyznaczone miejsca postojowe</li>
                 <li>Drzewa od strony Góry Parkowej</li>
                 <li>Osobny wjazd na posesję</li>
               </div>{" "}
@@ -77,13 +77,13 @@ const Portfolio = () => {
         </div>
         <Row />
         <div
-          data-aos="fade-right"
-          data-aos-duration="3000"
-          className="hoverable z-depth-2"
+          // data-aos="fade-right"
+          // data-aos-duration="3000"
+          // className="hoverable z-depth-2"
         >
-          <Col m={10} s={12} push="m1">
-            <Card header={<CardTitle image={interrior} />} horizontal>
-              <h5>
+          <Col l={8} s={12} push="l2">
+            <Card className="shadow" header={<CardTitle image={interrior} />} horizontal>
+              <h5 classname="right-align">
                 Projekt Wnętrz <Divider />
               </h5>
               <div className="left-align">
@@ -100,9 +100,9 @@ const Portfolio = () => {
           data-aos-duration="3000"
           className="hoverable z-depth-2"
         >
-          <Col m={10} s={12} push="m1">
-            <Card header={<CardTitle image={bim} />} horizontal>
-              <h5>
+          <Col l={8} s={12} push="l2">
+            <Card className="shadow" header={<CardTitle image={bim} />} horizontal>
+              <h5 classname="right-align">
                 Lokale w Willi <Divider />
               </h5>
               <div className="left-align">
@@ -110,7 +110,7 @@ const Portfolio = () => {
                   <Row>
                     <Row>
                       <Col m={4}>
-                        <h5>Fudnamenty</h5>
+                        <h5 classname="right-align">Fudnamenty</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -119,7 +119,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>Sciany</h5>
+                        <h5 classname="right-align">Sciany</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -135,7 +135,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>Stropy</h5>
+                        <h5 classname="right-align">Stropy</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -145,7 +145,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>Termoizolacja</h5>
+                        <h5 classname="right-align">Termoizolacja</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -157,7 +157,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>Wykończenie ścian zewnętrznych</h5>
+                        <h5 classname="right-align">Wykończenie ścian zewnętrznych</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -169,7 +169,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>Wykończenie ścian wewnętrznych</h5>
+                        <h5 classname="right-align">Wykończenie ścian wewnętrznych</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -182,7 +182,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5> Wykończenie posadzek</h5>
+                        <h5 classname="right-align"> Wykończenie posadzek</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -192,7 +192,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5> Stolarka okienna</h5>
+                        <h5 classname="right-align"> Stolarka okienna</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -211,7 +211,7 @@ const Portfolio = () => {
 
                     <Row>
                       <Col m={4}>
-                        <h5> Stolarka drzwiowa</h5>
+                        <h5 classname="right-align"> Stolarka drzwiowa</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -226,7 +226,7 @@ const Portfolio = () => {
 
                     <Row>
                       <Col m={4}>
-                        <h5> Tarasy</h5>
+                        <h5 classname="right-align"> Tarasy</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -239,7 +239,7 @@ const Portfolio = () => {
 
                     <Row>
                       <Col m={4}>
-                        <h5> Instalacje</h5>
+                        <h5 classname="right-align"> Instalacje</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -280,7 +280,7 @@ const Portfolio = () => {
                       </Col>
 
                       <Col m={4}>
-                        <h5> Plan zagospodarowania terenu</h5>
+                        <h5 classname="right-align"> Plan zagospodarowania terenu</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -300,9 +300,9 @@ const Portfolio = () => {
           data-aos-duration="3000"
           className="hoverable z-depth-2"
         >
-          <Col m={10} s={12} push="m1">
-            <Card header={<CardTitle image={bim} />} horizontal>
-              <h5>
+          <Col l={8} s={12} push="l2">
+            <Card className="shadow" header={<CardTitle image={bim} />} horizontal>
+              <h5 classname="right-align">
                 Lokale w nowym budynku <Divider />
               </h5>
               <div className="left-align">
@@ -310,7 +310,7 @@ const Portfolio = () => {
                   <Row>
                     <Row>
                       <Col m={4}>
-                        <h5>Fudnamenty</h5>
+                        <h5 classname="right-align">Fudnamenty</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -322,7 +322,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>Sciany</h5>
+                        <h5 classname="right-align">Sciany</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -338,7 +338,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>STROPY</h5>
+                        <h5 classname="right-align">STROPY</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -348,7 +348,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>TERMOIZOLACJA</h5>
+                        <h5 classname="right-align">TERMOIZOLACJA</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -360,7 +360,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>WYKOŃCZENIE ŚCIAN ZEWNĘTRZNYCH</h5>
+                        <h5 classname="right-align">WYKOŃCZENIE ŚCIAN ZEWNĘTRZNYCH</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -372,7 +372,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5>WYKOŃCZENIE ŚCIAN WEWNĘTRZNYCH</h5>
+                        <h5 classname="right-align">WYKOŃCZENIE ŚCIAN WEWNĘTRZNYCH</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -385,7 +385,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5> WYKOŃCZENIE POSADZEK</h5>
+                        <h5 classname="right-align"> WYKOŃCZENIE POSADZEK</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -395,7 +395,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5> STOLARKA OKIENNA</h5>
+                        <h5 classname="right-align"> STOLARKA OKIENNA</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -414,7 +414,7 @@ const Portfolio = () => {
 
                     <Row>
                       <Col m={4}>
-                        <h5> STOLARKA DRZWIOWA</h5>
+                        <h5 classname="right-align"> STOLARKA DRZWIOWA</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -429,7 +429,7 @@ const Portfolio = () => {
 
                     <Row>
                       <Col m={4}>
-                        <h5> TARASY</h5>
+                        <h5 classname="right-align"> TARASY</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -441,7 +441,7 @@ const Portfolio = () => {
                     </Row>
                     <Row>
                       <Col m={4}>
-                        <h5> BALKONY</h5>
+                        <h5 classname="right-align"> BALKONY</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -455,7 +455,7 @@ const Portfolio = () => {
 
                     <Row>
                       <Col m={4}>
-                        <h5> Instalacje</h5>
+                        <h5 classname="right-align"> Instalacje</h5>
                       </Col>
                       <Col m={8}>
                         <Row />
@@ -496,7 +496,7 @@ const Portfolio = () => {
                       </Col>
 
                       <Col m={4}>
-                        <h5> Plan zagospodarowania terenu</h5>
+                        <h5 classname="right-align"> Plan zagospodarowania terenu</h5>
                       </Col>
                       <Col m={8}>
                         <Row />

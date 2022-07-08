@@ -164,9 +164,10 @@ let loggedin = localStorage.getItem("pass");
       </Row>
     );
   });
-  if (loggedin == "KrynicaLeszek22") {
+  if (loggedin == "KrynicaLeszek2022") {
     return (
       <Row>
+        <Col s={12} l={8} push="l2">
         <Row className="white">
           <Row />
           <Col s={1}>LOKAL</Col>
@@ -227,16 +228,17 @@ let loggedin = localStorage.getItem("pass");
               Usun
             </Button>
           </Card>
-        </Row>
+        </Row></Col>
       </Row>
     );
   } else
     return (
       <Row>
-        <input placeholder="haslo" onChange={(e) => setPass(e.target.value)} />
+        <Card>
+        <input type="password" placeholder="haslo" onChange={(e) => setPass(e.target.value)} />
         <Button className="red" onClick={login}>
               Zaloguj
-            </Button>
+            </Button></Card>
       </Row>
     );
 };

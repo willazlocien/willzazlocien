@@ -1,37 +1,30 @@
 import "materialize-css";
-import React, { Component, useEffect } from "react";
-import {
-  Col,
-  MediaBox,
-  Row,
-} from "react-materialize";
+import React from "react";
+import { Col, MediaBox, Row } from "react-materialize";
 
 import img1 from "../components/img/Image 01.webp";
-import img2 from "../components/img/Image 02.webp";
+// import img2 from "../components/img/Image 02.webp";
 import img3 from "../components/img/Image 03.webp";
 import img4 from "../components/img/Image 04.webp";
 import img5 from "../components/img/Image 05.webp";
-import img6 from "../components/img/Image 06.webp";
-import img7 from "../components/img/Image 07.webp";
-import img8 from "../components/img/Image 08.webp";
+// import img6 from "../components/img/Image 06.webp";
+// import img7 from "../components/img/Image 07.webp";
+// import img8 from "../components/img/Image 08.webp";
 import img9 from "../components/img/Image 09.webp";
-import img10 from "../components/img/Image 10.webp";
-import img11 from "../components/img/Image 11.webp";
 import img12 from "../components/img/Image 12.webp";
 import img13 from "../components/img/Image 13.webp";
-import img14 from "../components/img/Image 14.webp";
-import img15 from "../components/img/Image 15.webp";
-import img16 from "../components/img/Image 16.webp";
-import img17 from "../components/img/Image 17.webp";
+import img16 from "../components/img/Image 08.webp";
 import img18 from "../components/img/Image 18.webp";
-import img19 from "../components/img/Image 21.webp";
-import Iframe from "react-iframe";
+
+// import Iframe from "react-iframe";
 export default class Gallery extends React.Component {
   render() {
     return (
-      <Row className="white">
+      <Row className="black">
+        <Row/><div className="standart"></div>
         <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_1"
             options={{
               inDuration: 275,
@@ -48,22 +41,7 @@ export default class Gallery extends React.Component {
         </Col>
         <Col s={12} m={4}>
           <MediaBox
-            id="MediaBox_2"
-            options={{
-              inDuration: 275,
-              onCloseEnd: null,
-              onCloseStart: null,
-              onOpenEnd: null,
-              onOpenStart: null,
-              outDuration: 200,
-            }}
-          >
-            <img alt="" src={img2} width="100%" />
-          </MediaBox>
-          <Row />
-        </Col>
-        <Col s={12} m={4}>
-          <MediaBox
+            className="z-depth-3"
             id="MediaBox_2"
             options={{
               inDuration: 275,
@@ -80,6 +58,7 @@ export default class Gallery extends React.Component {
         </Col>
         <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_3"
             options={{
               inDuration: 275,
@@ -96,6 +75,7 @@ export default class Gallery extends React.Component {
         </Col>
         <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_4"
             options={{
               inDuration: 275,
@@ -112,22 +92,7 @@ export default class Gallery extends React.Component {
         </Col>
         <Col s={12} m={4}>
           <MediaBox
-            id="MediaBox_5"
-            options={{
-              inDuration: 275,
-              onCloseEnd: null,
-              onCloseStart: null,
-              onOpenEnd: null,
-              onOpenStart: null,
-              outDuration: 200,
-            }}
-          >
-            <img alt="" src={img5} width="100%" />
-          </MediaBox>
-          <Row />
-        </Col>
-        <Col s={12} m={4}>
-          <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -142,8 +107,9 @@ export default class Gallery extends React.Component {
           </MediaBox>
           <Row />
         </Col>
-        <Col s={12} m={4}>
+        {/* <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -157,9 +123,10 @@ export default class Gallery extends React.Component {
             <img alt="" src={img10} width="100%" />
           </MediaBox>
           <Row />
-        </Col>{" "}
-        <Col s={12} m={4}>
+        </Col>{" "} */}
+        {/* <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -173,9 +140,10 @@ export default class Gallery extends React.Component {
             <img alt="" src={img11} width="100%" />
           </MediaBox>
           <Row />
-        </Col>
+        </Col> */}
         <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -192,6 +160,7 @@ export default class Gallery extends React.Component {
         </Col>{" "}
         <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -206,8 +175,9 @@ export default class Gallery extends React.Component {
           </MediaBox>
           <Row />
         </Col>{" "}
-        <Col s={12} m={4}>
+        {/* <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -221,9 +191,10 @@ export default class Gallery extends React.Component {
             <img alt="" src={img14} width="100%" />
           </MediaBox>
           <Row />
-        </Col>{" "}
-        <Col s={12} m={4}>
+        </Col>{" "} */}
+        {/* <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -237,9 +208,10 @@ export default class Gallery extends React.Component {
             <img alt="" src={img15} width="100%" />
           </MediaBox>
           <Row />
-        </Col>{" "}
+        </Col>{" "} */}
         <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -254,8 +226,9 @@ export default class Gallery extends React.Component {
           </MediaBox>
           <Row />
         </Col>{" "}
-        <Col s={12} m={4}>
+        {/* <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -269,9 +242,10 @@ export default class Gallery extends React.Component {
             <img alt="" src={img17} width="100%" />
           </MediaBox>
           <Row />
-        </Col>{" "}
+        </Col>{" "} */}
         <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -286,8 +260,9 @@ export default class Gallery extends React.Component {
           </MediaBox>
           <Row />
         </Col>{" "}
-        <Col s={12} m={4}>
+        {/* <Col s={12} m={4}>
           <MediaBox
+            className="z-depth-3"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -301,11 +276,9 @@ export default class Gallery extends React.Component {
             <img alt="" src={img19} width="100%" />
           </MediaBox>
 
-          
-          
           <Row />
-        </Col>
-        <Row className="center">
+        </Col> */}
+        {/* <Row className="center">
             <Row/>
             <Iframe
               url="https://www.youtube.com/embed/v8f9e9BM33I"
@@ -381,7 +354,7 @@ export default class Gallery extends React.Component {
               display="initial"
               position="relative"
             />
-          </Row>
+          </Row> */}
       </Row>
     );
   }

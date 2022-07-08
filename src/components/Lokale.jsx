@@ -21,11 +21,11 @@ const Lokale = () => {
   let lang = localStorage.getItem("lang");
 
   return (
-    <div>
+    <div><div className="lokalebg"></div>
       <div
         data-aos="fade-right"
         data-aos-duration="2000"
-        className="hoverable z-depth-5 white"
+        className=" "
       >
         <Card>
           
@@ -34,17 +34,19 @@ const Lokale = () => {
                 Etap 1
                 <Divider />
               </h3>
-              Etap 1 obejmuje renowacje Willi Złocień
+              Etap 1 obejmuje renowacje Willi Złocień.
               <br/>
-              Podane ceny bruuto
+              Podane ceny brutto.
               <br/>
-              Powierzchnie mieszkań po wykonaniu remontu mogą róznić się +/- 1.5 m2 od powierzchni oferowanej, po obmiarze wykonawczym nastąpi korekta ceny w zależności od powierzchni
+              Powierzchnie mieszkań po wykonaniu remontu mogą róznić się +/- 1.5 m2 
+              <br/>
+              od powierzchni oferowanej, po obmiarze wykonawczym nastąpi korekta ceny.
               <Row />
             </div>
             <Row>
           <Col s={12} m={3}>
                 <img src={pietro0} width="100%" />
-                Piętro 0
+                Parter
               </Col>
               
               <Col s={12} m={3}>

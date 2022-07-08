@@ -30,10 +30,13 @@ code {
 } */
 .navbaritem{
   justify-content: space-evenly;
-  color: rgb(82, 82, 82);
+  color: rgb(255, 255, 255);
+  background-color: red;
+  
   margin-left: 1vw;
   margin-right: 1vw;
   font-size: 120%;
+  
 }
 
 .navbaritem:hover{
@@ -48,13 +51,13 @@ background-color: rgba(255, 255, 255, 0.5);
 .video-wrapper {
  
   width: 100%;
-  min-height: 525px;
+  min-height: 65vh;
   
  }
  .change-my-color {
   fill: red;
 }
-.btnhome0{
+/* .btnhome0{
   position: fixed;
   right:2vw;
   top: 75vh;
@@ -88,7 +91,16 @@ background-color: rgba(255, 255, 255, 0.5);
   top: 90vh;
   border-radius: 20px;
   width: 10vw;
+} */
+
+.homeBar{
+  position: fixed;
+  height:5vw;
+  top: 95vh;
+  border-radius: 20px;
+  width: 100vw;
 }
+
 
 .modalbg{
   background-color: rgba(255, 255, 255, 0.2);
@@ -106,7 +118,24 @@ background-color: rgba(255, 255, 255, 0.5);
 /* .modalid{
   min-height: 80vh;
 } */
+.standart{
+  background-color: #050505 !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -3;
+}
 
+.lokalebg{
+  background-color: white !important;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -3;
+}
 @media only screen and (max-width: 600px) {
   .textMobile{
     font-size: small;
@@ -115,4 +144,22 @@ background-color: rgba(255, 255, 255, 0.5);
     min-height: 5vh !important;
     font-size: x-small;
   }
+}
+
+.card{
+  border-radius: 20px;
+}
+
+.shadow{
+  box-shadow: 4px 4px 100px 5px #050505 !important;
+  
+  border-radius: 20px !important;
+}
+
+.home{
+  min-height: 100vh !important;
+}
+.navCard{
+  border-radius: 20px !important;
+  /* width: 80vw; */
 }

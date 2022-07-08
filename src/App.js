@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {  } from "react";
 import "./App.css";
 import "materialize-css";
 import { Button, Modal, Row, Col } from "react-materialize";
@@ -13,7 +13,7 @@ import NavMobile from "./components/NavMobile";
 import TypA from "./components/TypA";
 import test from "./components/test";
 import DocumentMeta from 'react-document-meta';
-
+import Welcome from "./components/Standart";
 function App() {
   const meta = {
     title: "willa zlocien",
@@ -30,8 +30,9 @@ function App() {
   <DocumentMeta {...meta}>  <div className="App">
       
       <Row>
-        <Col s={12} m={10} l={8} push="m1 l2 s0" className="appbg">
+        
           <BrowserRouter>
+          
             <br />
             <div className="hide-on-small-only">
               <Nav />
@@ -39,7 +40,7 @@ function App() {
             <div className="hide-on-med-and-up">
               <NavMobile />
             </div>
-            <br />
+            <br /><Row><Col s={12}  className="appbg">
             <Switch>
               <Route path="/home" component={Home} />
               <Route path="/contact" component={Contact} />
@@ -48,8 +49,8 @@ function App() {
               <Route path="/wprowadzzmiany" component={TypA} />
               <Route path="/gallery" component={Gallery} />
               <Route path="/test" component={test} />
-              <Route path="/:any" component={Home} />
-              <Route path="/" component={Home} />
+              <Route path="/:any" component={Welcome} />
+              <Route path="/" component={Welcome} />
             </Switch>
             <Row />
             <Row />
@@ -86,9 +87,9 @@ function App() {
               </Button>
                 <Col m={6}>
                   <h5 className="white-text left-align">
-                    Idea Development
+                    Idea Development sp. z o.o.
                     <br />
-                    +48 794055035 
+                    +48 794 055 035 
                     <br />
                     Leszek.kraus@poczta.onet.pl
                     <br />
@@ -100,11 +101,11 @@ function App() {
                   </h5>
                 </Col>
               </Row>
-            </div>
+            </div> </Col></Row>
           </BrowserRouter>
-        </Col>
+       
       </Row>
-      <div className="hide-on-small-only">
+      <div className="hide-on-small-only homeBar">
         <Button
           className="z-depth-2  btnhome0 red"
           target="blank"
