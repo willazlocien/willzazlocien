@@ -1,7 +1,7 @@
-import React, {  } from "react";
+import React from "react";
 import "./App.css";
 import "materialize-css";
-import { Button, Modal, Row, Col } from "react-materialize";
+import { Button, Modal, Row, Col, Card } from "react-materialize";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
@@ -12,7 +12,7 @@ import Nav from "./components/Nav";
 import NavMobile from "./components/NavMobile";
 import TypA from "./components/TypA";
 import test from "./components/test";
-import DocumentMeta from 'react-document-meta';
+import DocumentMeta from "react-document-meta";
 import Welcome from "./components/Standart";
 function App() {
   const meta = {
@@ -27,12 +27,11 @@ function App() {
     },
   };
   return (
-  <DocumentMeta {...meta}>  <div className="App">
-      
-      <Row>
-        
+    <DocumentMeta {...meta}>
+      {" "}
+      <div className="App">
+        <Row>
           <BrowserRouter>
-          
             <br />
             <div className="hide-on-small-only">
               <Nav />
@@ -40,107 +39,124 @@ function App() {
             <div className="hide-on-med-and-up">
               <NavMobile />
             </div>
-            <br /><Row><Col s={12}  className="appbg">
-            <Switch>
-              <Route path="/home" component={Home} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/offer" component={Offer} />
-              <Route path="/standart" component={Portfolio} />
-              <Route path="/wprowadzzmiany" component={TypA} />
-              <Route path="/gallery" component={Gallery} />
-              <Route path="/test" component={test} />
-              <Route path="/:any" component={Welcome} />
-              <Route path="/" component={Welcome} />
-            </Switch>
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <div className="grey darken-2">
-              <Row>
-                <Col m={6}>
-                  <h3 className="white-text valign-align">Dane Kontaktowe</h3>
-                </Col>
-                <Button className=" red " node="button">
-                RODO
-              </Button>
-                <Col m={6}>
-                  <h5 className="white-text left-align">
-                    Idea Development sp. z o.o.
-                    <br />
-                    +48 794 055 035 
-                    <br />
-                    Leszek.kraus@poczta.onet.pl
-                    <br />
-                    Rakowicka 15 31-511 Krakow
-                    <br />
-                    <a href="https://cholujdesign.com/">
-                      © 2023 by Choluj Design s.c.
-                    </a>
-                  </h5>
-                </Col>
-              </Row>
-            </div> </Col></Row>
+            <br />
+            <Row>
+              <Col s={12} className="appbg">
+                <Switch>
+                  <Route path="/home" component={Home} />
+                  <Route path="/contact" component={Contact} />
+                  <Route path="/offer" component={Offer} />
+                  <Route path="/standart" component={Portfolio} />
+                  <Route path="/wprowadzzmiany" component={TypA} />
+                  <Route path="/gallery" component={Gallery} />
+                  <Route path="/test" component={test} />
+                  <Route path="/:any" component={Welcome} />
+                  <Route path="/" component={Welcome} />
+                </Switch>
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                <Row />
+                
+                  <Row><Col m={12} l={8} push="l2">
+                    <Card className="shadow white">
+                    
+                      <Row>
+                        <Col m={6}>
+                          <h3 className="black-text valign-align">
+                            Dane Kontaktowe
+                          </h3>
+                        </Col>
+                        <Button className=" red " node="button">
+                          RODO
+                        </Button>
+                        <Col m={6}>
+                          <h5 className="black-text left-align">
+                            Idea Development sp. z o.o.
+                            <br />
+                            +48 794 055 035
+                            <br />
+                            Leszek.kraus@poczta.onet.pl
+                            <br />
+                            Rakowicka 15 31-511 Krakow
+                            <br />
+                            <a href="https://cholujdesign.com/">
+                              © 2023 by Choluj Design s.c.
+                            </a>
+                          </h5>
+                        </Col>
+                      </Row>    </Card>
+                    </Col>  
+                
+                  </Row>
+              
+              </Col>
+            </Row>
           </BrowserRouter>
-       
-      </Row>
-      <div className="hide-on-small-only homeBar">
-        <Button
-          className="z-depth-2  btnhome0 red"
-          target="blank"
-          node="a"
-          href="https://goo.gl/maps/te1YqVZKmfbe3EdM6"
-        >
-          Nasze Biuro
-        </Button>
-        <Button
-          className="z-depth-2  btnhome1 red"
-          target="blank"
-          node="a"
-          href="https://goo.gl/maps/sSB9xmXwWHLGFXTD9"
-        >
-          Willa Złocień
-        </Button>
-        <Button
-          className="z-depth-2 red  btnhome2"
-          target="blank"
-          node="a"
-          href="tel:+ 48794055035 "
-        >
-          zadzwoń
-        </Button>
-        <Button
-          className="z-depth-2  red btnhome3"
-          target="blank"
-          node="a"
-          href="mailto:Leszek.kraus@poczta.onet.pl"
-        >
-          Email
-        </Button>
-        <Modal
+        </Row>
+        <div className="hide-on-small-only homeBar">
+          <Button
+            className="z-depth-2  btnhome0 red"
+            target="blank"
+            node="a"
+            href="https://goo.gl/maps/te1YqVZKmfbe3EdM6"
+          >
+            Nasze Biuro
+          </Button>
+          <Button
+            className="z-depth-2  btnhome1 red"
+            target="blank"
+            node="a"
+            href="https://goo.gl/maps/sSB9xmXwWHLGFXTD9"
+          >
+            Willa Złocień
+          </Button>
+          <Button
+            className="z-depth-2 red  btnhome2"
+            target="blank"
+            node="a"
+            href="tel:+ 48794055035 "
+          >
+            zadzwoń
+          </Button>
+          <Button
+            className="z-depth-2  red btnhome3"
+            target="blank"
+            node="a"
+            href="mailto:Leszek.kraus@poczta.onet.pl"
+          >
+            Email
+          </Button>
+          <Modal
             actions={[
-              <Button className="z-depth-2  " flat modal="close" node="button" waves="green">
+              <Button
+                className="z-depth-2  "
+                flat
+                modal="close"
+                node="button"
+                waves="green"
+              >
                 Close
               </Button>,
             ]}
@@ -233,57 +249,57 @@ function App() {
               data and repealing Directive 95/46 / EC (general protection
               regulation data) ("GDPR"), we provide the following information
               regarding your data personal. Personal data administrator The
-              administrator of your personal data is Idea Developemnt.
-              Purpose and basis of processing We process your personal data: •
-              for the purpose consistent with the consent granted, provided that
-              consent has been given, pursuant to Art. 6 sec. 1 lit. a GDPR; •
-              in order to respond to your interest in our offer commercial, in
-              accordance with Art. 6 sec. 1 lit. b GDPR; • in order to conclude
-              and perform a contract, pursuant to Art. 6 sec. 1 lit. b GDPR; •
-              in order to comply with legal obligations, such as those resulting
-              from regulations tax, pursuant to Art. 6 sec. 1 lit. c GDPR; • in
-              order to pursue our legitimate interests as The administrator
-              referred to in art. 6 sec. 1 lit. f GDPR, such as marketing
-              direct, investigation or defense against claims. Recipients of
-              personal data The recipients of your data will be the following
-              entities: • entities entrusted with the processing of personal
-              data in our on behalf of: IT companies, law firms, audit units,
-              agencies protection; • entities or bodies authorized by law. The
-              period of data storage your personal data will be stored: • in the
-              case of data processing on the basis of consent - until the
-              consent is withdrawn; • in the case of data processing on the
-              basis of the purpose of presenting an offer - for the period of
-              contract negotiation and until the end of the calendar year
-              following the year in which you last contacted about the matter
-              its conclusion; • in the case of data processing on the basis of
-              the performance of a contract - up to the moment the contract
-              expires; • in the case of processing in order to fulfill legal
-              obligations - for the period of what current legal regulations
-              require their storage; • in the case of data processing based on a
-              legitimate interest Administrator - until the end of this interest
-              (e.g. limitation of claims) or until an effective objection is
-              raised, against another processing by the data subject. Rights of
-              data subjects According to the GDPR, you are entitled to: • the
-              right to access your data and receive a copy of it; • the right to
-              rectify (correct) your data; • the right to delete data; • the
-              right to limit data processing; • right to object; • the right to
-              lodge a complaint with the President of the Personal Data
-              Protection Office. Information on the right to withdraw consent In
-              relation to data processed on the basis of consent, we inform that
-              consent is each time entirely voluntary, and in the case of it
-              expression, you have the right to withdraw it at any time.
-              Withdrawal of consent will not affect the lawfulness of the
-              processing has been done so far. Obligation to provide personal
-              data Providing data is voluntary, but necessary if you want to
-              enter into a contract with us or receive offers. Providing data on
-              the basis of consent is completely voluntary. Information on
-              automated decision making and profiling In connection with the
-              processing of your personal data, there is no automated decision
-              making, including profiling.
+              administrator of your personal data is Idea Developemnt. Purpose
+              and basis of processing We process your personal data: • for the
+              purpose consistent with the consent granted, provided that consent
+              has been given, pursuant to Art. 6 sec. 1 lit. a GDPR; • in order
+              to respond to your interest in our offer commercial, in accordance
+              with Art. 6 sec. 1 lit. b GDPR; • in order to conclude and perform
+              a contract, pursuant to Art. 6 sec. 1 lit. b GDPR; • in order to
+              comply with legal obligations, such as those resulting from
+              regulations tax, pursuant to Art. 6 sec. 1 lit. c GDPR; • in order
+              to pursue our legitimate interests as The administrator referred
+              to in art. 6 sec. 1 lit. f GDPR, such as marketing direct,
+              investigation or defense against claims. Recipients of personal
+              data The recipients of your data will be the following entities: •
+              entities entrusted with the processing of personal data in our on
+              behalf of: IT companies, law firms, audit units, agencies
+              protection; • entities or bodies authorized by law. The period of
+              data storage your personal data will be stored: • in the case of
+              data processing on the basis of consent - until the consent is
+              withdrawn; • in the case of data processing on the basis of the
+              purpose of presenting an offer - for the period of contract
+              negotiation and until the end of the calendar year following the
+              year in which you last contacted about the matter its conclusion;
+              • in the case of data processing on the basis of the performance
+              of a contract - up to the moment the contract expires; • in the
+              case of processing in order to fulfill legal obligations - for the
+              period of what current legal regulations require their storage; •
+              in the case of data processing based on a legitimate interest
+              Administrator - until the end of this interest (e.g. limitation of
+              claims) or until an effective objection is raised, against another
+              processing by the data subject. Rights of data subjects According
+              to the GDPR, you are entitled to: • the right to access your data
+              and receive a copy of it; • the right to rectify (correct) your
+              data; • the right to delete data; • the right to limit data
+              processing; • right to object; • the right to lodge a complaint
+              with the President of the Personal Data Protection Office.
+              Information on the right to withdraw consent In relation to data
+              processed on the basis of consent, we inform that consent is each
+              time entirely voluntary, and in the case of it expression, you
+              have the right to withdraw it at any time. Withdrawal of consent
+              will not affect the lawfulness of the processing has been done so
+              far. Obligation to provide personal data Providing data is
+              voluntary, but necessary if you want to enter into a contract with
+              us or receive offers. Providing data on the basis of consent is
+              completely voluntary. Information on automated decision making and
+              profiling In connection with the processing of your personal data,
+              there is no automated decision making, including profiling.
             </p>
           </Modal>
-      </div>
-   </div> </DocumentMeta>
+        </div>
+      </div>{" "}
+    </DocumentMeta>
   );
 }
 
