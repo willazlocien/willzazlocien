@@ -14,7 +14,7 @@ const Nav = () => {
 
     return (
       <Row className="navbar">
-        <Col m={10} l={6} push="m1 l3">
+        <Col m={12} l={8} push=" l2">
           <h3 className="red-text">Willa Złocień</h3>
           <div className="text-black">
             
