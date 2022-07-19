@@ -75,7 +75,7 @@ export default class Gallery extends React.Component {
         </Col>
         <Col s={12} m={4}>
           <MediaBox
-            className="z-depth-3"
+            className="z-depth-4"
             id="MediaBox_4"
             options={{
               inDuration: 275,
@@ -111,7 +111,7 @@ export default class Gallery extends React.Component {
         <Col s={12} m={4}>
           <MediaBox
             className="z-depth-3"
-            id="MediaBox_6"
+            id="MediaBox_6444"
             options={{
               inDuration: 275,
               onCloseEnd: null,
@@ -128,7 +128,7 @@ export default class Gallery extends React.Component {
         <Col s={12} m={4}>
           <MediaBox
             className="z-depth-3"
-            id="MediaBox_6"
+            id="MediaBox_631"
             options={{
               inDuration: 275,
               onCloseEnd: null,
@@ -145,7 +145,7 @@ export default class Gallery extends React.Component {
    
         <Col s={12} m={4}>
           <MediaBox
-            className="z-depth-3"
+            className="z-depth-345"
             id="MediaBox_6"
             options={{
               inDuration: 275,
@@ -164,7 +164,7 @@ export default class Gallery extends React.Component {
         <Col s={12} m={4}>
           <MediaBox
             className="z-depth-3"
-            id="MediaBox_6"
+            id="MediaBox_6121"
             options={{
               inDuration: 275,
               onCloseEnd: null,
