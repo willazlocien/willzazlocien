@@ -50,7 +50,7 @@ const Home = () => {
                 interval: 6000,
               }}
             >
-              <Slide image={<img src="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513970_5459907027399205_4461154066782848590_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q2hwhnNMoesAX9PUaYc&_nc_ht=scontent.flcj1-1.fna&oh=00_AT93HYM7NfpGoWebeEw1MrSlCxaHzYq-uBLr0oGnnLJd7Q&oe=62DBB30A" src={img1} />}>
+              <Slide image={<img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513970_5459907027399205_4461154066782848590_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q2hwhnNMoesAX9PUaYc&_nc_ht=scontent.flcj1-1.fna&oh=00_AT93HYM7NfpGoWebeEw1MrSlCxaHzYq-uBLr0oGnnLJd7Q&oe=62DBB30A" src={img1} />}>
                 <Caption placement="center">
                   <h3>Nowa inwestycja</h3>
                   <h5 className="light grey-text text-lighten-3">
@@ -58,7 +58,7 @@ const Home = () => {
                   </h5>
                 </Caption>
               </Slide>
-              <Slide image={<img src="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513602_5459907064065868_9194213757905239748_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=P06CFikdOOAAX_6k076&tn=o5ey6nqbzOgQXIue&_nc_ht=scontent.flcj1-1.fna&oh=00_AT8u4VeKgUkDzUPFQim6uOBzOvCbv1fTypOWjfX_twuqlQ&oe=62DC2C4B" src={img2} />}>
+              <Slide image={<img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513602_5459907064065868_9194213757905239748_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=P06CFikdOOAAX_6k076&tn=o5ey6nqbzOgQXIue&_nc_ht=scontent.flcj1-1.fna&oh=00_AT8u4VeKgUkDzUPFQim6uOBzOvCbv1fTypOWjfX_twuqlQ&oe=62DC2C4B" src={img2} />}>
                 <Caption placement="left">
                   <h3>Etap I</h3>
                   <h5 className="light grey-text text-lighten-3">
@@ -66,7 +66,7 @@ const Home = () => {
                   </h5>
                 </Caption>
               </Slide>
-              <Slide image={<img src="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294672919_5459907117399196_2524468230845151601_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=6qlk3bNBgzkAX8vXidl&_nc_oc=AQkAOaD3aZEL3H83i7MLZ_sXzBmPJNJe7vccg2d4gywFNQtbAkC5PEhhvte2mMQWlxk&_nc_ht=scontent.flcj1-1.fna&oh=00_AT_VUdYDmTk2P1NsLrvTYtdAXIkEIvSkb4MNPeKYoXcFxg&oe=62DAEC5A" src={img3} />}>
+              <Slide image={<img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294672919_5459907117399196_2524468230845151601_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=6qlk3bNBgzkAX8vXidl&_nc_oc=AQkAOaD3aZEL3H83i7MLZ_sXzBmPJNJe7vccg2d4gywFNQtbAkC5PEhhvte2mMQWlxk&_nc_ht=scontent.flcj1-1.fna&oh=00_AT_VUdYDmTk2P1NsLrvTYtdAXIkEIvSkb4MNPeKYoXcFxg&oe=62DAEC5A" src={img3} />}>
                 <Caption placement="right">
                   <h3>Etap II</h3>
                   <h5 className="light grey-text text-lighten-3">Rozbudowa</h5>
