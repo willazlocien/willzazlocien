@@ -21,9 +21,9 @@ import layout from "./svg/layout.svg";
 import arrow from "./svg/arrow.svg";
 
 
-let img1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/components/img/Image 01.webp";
-let img2 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/components/img/Image 04.webp";
-let img3 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/components/img/Image 07.webp";
+let img1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2001.webp";
+let img2 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2004.webp";
+let img3 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2007.webp";
 
 const Home = () => {
   useEffect(() => {
