@@ -2,21 +2,20 @@ import "materialize-css";
 import React from "react";
 import { Col, MediaBox, Row } from "react-materialize";
 
-import img1 from "../components/img/Image 01.webp";
-// import img2 from "../components/img/Image 02.webp";
-import img3 from "../components/img/Image 03.webp";
-import img4 from "../components/img/Image 04.webp";
-import img5 from "../components/img/Image 05.webp";
-// import img6 from "../components/img/Image 06.webp";
-// import img7 from "../components/img/Image 07.webp";
-// import img8 from "../components/img/Image 08.webp";
-import img9 from "../components/img/Image 09.webp";
-import img12 from "../components/img/Image 12.webp";
-import img13 from "../components/img/Image 13.webp";
-import img16 from "../components/img/Image 08.webp";
-import img18 from "../components/img/Image 18.webp";
+let img1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 01.webp";
+let img3 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 03.webp";
+let img4 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 04.webp";
+let img5 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 05.webp";
+let img9 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 09.webp";
+let img12 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 12.webp";
+let img13 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 13.webp";
+let img16  = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 08.webp";
+let img18 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 18.webp";
 
-// import Iframe from "react-iframe";
+
+
+
+
 export default class Gallery extends React.Component {
   render() {
     return (

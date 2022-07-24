@@ -19,9 +19,11 @@ import silence from "./svg/silence.svg";
 import windows from "./svg/windows.svg";
 import layout from "./svg/layout.svg";
 import arrow from "./svg/arrow.svg";
-import img1 from "../components/img/Image 01.webp";
-import img2 from "../components/img/Image 04.webp";
-import img3 from "../components/img/Image 07.webp";
+
+
+let img1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/components/img/Image 01.webp";
+let img2 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/components/img/Image 04.webp";
+let img3 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/components/img/Image 07.webp";
 
 const Home = () => {
   useEffect(() => {
