@@ -47,8 +47,8 @@ const Nav = () => {
         <NavItem className="" href="home">
           O inwestycji
         </NavItem>
-        <NavItem className=" " href="standart">
-          Standart
+        <NavItem className=" " href="standard">
+          Standard
         </NavItem>
         <NavItem className="" href="offer">
           Lokale

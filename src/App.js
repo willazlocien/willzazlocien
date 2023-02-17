@@ -46,7 +46,7 @@ function App() {
                   <Route path="/home" component={Home} />
                   <Route path="/contact" component={Contact} />
                   <Route path="/offer" component={Offer} />
-                  <Route path="/standart" component={Portfolio} />
+                  <Route path="/standard" component={Portfolio} />
                   <Route path="/wprowadzzmiany" component={TypA} />
                   <Route path="/gallery" component={Gallery} />
                   <Route path="/test" component={test} />

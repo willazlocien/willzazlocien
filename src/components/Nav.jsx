@@ -22,8 +22,8 @@ const Nav = () => {
             O inwestycji
           </Link>
 
-          <Link to="standart" className="btn red navbaritem">
-            Standart
+          <Link to="standard" className="btn red navbaritem">
+            Standard
           </Link>
           
           <Link to="offer" className="btn red navbaritem" >
