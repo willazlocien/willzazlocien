@@ -26,7 +26,7 @@ const Portfolio = () => {
                 Etap I - Remont Willi Złocień  <Divider />
               </h5>
               <div className="left-align">
-              <li>Winda</li>
+              <li>Odrestaurowana fasada budynku</li>
               <li>Wydzielone miejsca postojowe</li>
               <li>Kotłownia gazowa</li>
               <li>Stan deweloperski, ściany malowane na biało</li>
@@ -48,9 +48,10 @@ const Portfolio = () => {
               <div className="left-align">
                 <li>Garaż podziemny</li>
                 <li>Basen dla mieszkańców</li>
-                <li>Lokale z tarasami</li>
+                
                 <li>Duże przeszklenia</li>
                 <li>Pompa ciepła</li>
+                <li>Winda</li>
               </div>{" "}
             </Card>
           </Col>
@@ -64,13 +65,16 @@ const Portfolio = () => {
           <Col l={8} s={12} push="l2">
             <Card className="shadow" header={<CardTitle image={ogrod} />} horizontal>
               <h5 classname="right-align">
-                Teren wokół Willi Złocień ogrodzony i zalesiony
+                Teren wokół Willi Złocień 
                 <Divider />
               </h5>
               <div className="left-align">
                 <li>Wyznaczone miejsca postojowe</li>
-                <li>Drzewa od strony Góry Parkowej</li>
+                
                 <li>Osobny wjazd na posesję</li>
+                <li>Zagospodarowany plac wokół budynku</li>
+                
+                <br/><br/><br/>
               </div>{" "}
             </Card>
           </Col>
@@ -90,6 +94,10 @@ const Portfolio = () => {
                 Oferujemy przygotowanie projektu wnętrz oraz wykonczenia lokali
                 na zyczenie. Koszt oraz czas realizacji takiego zamowienia
                 bedzie dostosowany do Panstwa preferencji i wymagań.
+                <br/>
+                <a href="https://cholujdesign.com/">
+                https://cholujdesign.com/
+                </a>
               </div>{" "}
             </Card>
           </Col>

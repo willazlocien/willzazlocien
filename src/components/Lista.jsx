@@ -114,7 +114,7 @@ const Lista = [
         bottomSheet={false}
         fixedFooter={false}
         header={"Rzut "}
-        id="M1"
+        id="M1sad"
         open={false}
         options={{
           dismissible: true,
@@ -154,7 +154,7 @@ const Lista = [
         bottomSheet={false}
         fixedFooter={false}
         header={"Rzut "}
-        id="M1"
+        id="M123d"
         open={false}
         options={{
           dismissible: true,
@@ -194,7 +194,7 @@ const Lista = [
         bottomSheet={false}
         fixedFooter={false}
         header={"Rzut "}
-        id="M1"
+        id="M1cvf"
         open={false}
         options={{
           dismissible: true,
@@ -275,7 +275,7 @@ const Lista = [
         bottomSheet={false}
         fixedFooter={false}
         header={"Rzut "}
-        id="M1"
+        id="M1sad"
         open={false}
         options={{
           dismissible: true,
@@ -308,7 +308,7 @@ const Lista = [
       <Modal
       className="modalid"
         actions={[
-          <Button flat modal="close" node="button" waves="green">
+          <Button disabled flat modal="close" node="button" waves="green">
             Zamknij
           </Button>,
         ]}
@@ -331,7 +331,7 @@ const Lista = [
           startingTop: "4%",
         }}
         trigger={
-          <Button className="red" node="button"   small>
+          <Button disabled className="red" node="button"   small>
             Rzut
           </Button>
         }
@@ -355,7 +355,7 @@ const Lista = [
         bottomSheet={false}
         fixedFooter={false}
         header={"Rzut "}
-        id="M1"
+        id="M12"
         open={false}
         options={{
           dismissible: true,
@@ -371,7 +371,7 @@ const Lista = [
           startingTop: "4%",
         }}
         trigger={
-          <Button className="red" node="button"   small>
+          <Button disabled className="red" node="button"   small>
             Rzut
           </Button>
         }
@@ -395,7 +395,7 @@ const Lista = [
         bottomSheet={false}
         fixedFooter={false}
         header={"Rzut "}
-        id="M1"
+        id="M122"
         open={false}
         options={{
           dismissible: true,
@@ -435,7 +435,7 @@ const Lista = [
         bottomSheet={false}
         fixedFooter={false}
         header={"Rzut "}
-        id="M1"
+        id="M12222"
         open={false}
         options={{
           dismissible: true,
@@ -515,7 +515,7 @@ const Lista = [
         bottomSheet={false}
         fixedFooter={false}
         header={"Rzut "}
-        id="M1"
+        id="M1213"
         open={false}
         options={{
           dismissible: true,

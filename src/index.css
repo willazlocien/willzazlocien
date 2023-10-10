@@ -11,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background: url(../src/components/img/bg.webp);
+  background: url(../src/components/img/budynek-foto-2.webp);
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -153,7 +153,7 @@ background-color: rgba(255, 255, 255, 0.5);
 .shadow{
   box-shadow: 4px 4px 100px 5px #050505 !important;
   
-  border-radius: 20px !important;
+  border-radius: 10px !important;
 }
 
 .home{

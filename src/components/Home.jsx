@@ -1,5 +1,5 @@
 import "materialize-css";
-import React, {  useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   Col,
   Divider,
@@ -19,18 +19,20 @@ import silence from "./svg/silence.svg";
 import windows from "./svg/windows.svg";
 import layout from "./svg/layout.svg";
 import arrow from "./svg/arrow.svg";
-
-
-let img1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2001.webp";
-let img2 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2004.webp";
-let img3 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2007.webp";
+let img19 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp"
+let img20 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-2.webp"
+let img21 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-3.webp"
+let img1 =
+  "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2001.webp";
+let img2 =
+  "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2004.webp";
+let img3 =
+  "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image%2007.webp";
 
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-
- 
 
   return (
     <Row className="black">
@@ -45,12 +47,19 @@ const Home = () => {
               fullscreen={false}
               options={{
                 duration: 500,
-                height: 600,
+                height: 800,
                 indicators: false,
                 interval: 6000,
               }}
             >
-              <Slide image={<img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513970_5459907027399205_4461154066782848590_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q2hwhnNMoesAX9PUaYc&_nc_ht=scontent.flcj1-1.fna&oh=00_AT93HYM7NfpGoWebeEw1MrSlCxaHzYq-uBLr0oGnnLJd7Q&oe=62DBB30A" src={img1} />}>
+              <Slide
+                image={
+                  <img
+                    alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513970_5459907027399205_4461154066782848590_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q2hwhnNMoesAX9PUaYc&_nc_ht=scontent.flcj1-1.fna&oh=00_AT93HYM7NfpGoWebeEw1MrSlCxaHzYq-uBLr0oGnnLJd7Q&oe=62DBB30A"
+                    src={img19}
+                  />
+                }
+              >
                 <Caption placement="center">
                   <h3>Nowa inwestycja</h3>
                   <h5 className="light grey-text text-lighten-3">
@@ -58,7 +67,14 @@ const Home = () => {
                   </h5>
                 </Caption>
               </Slide>
-              <Slide image={<img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513602_5459907064065868_9194213757905239748_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=P06CFikdOOAAX_6k076&tn=o5ey6nqbzOgQXIue&_nc_ht=scontent.flcj1-1.fna&oh=00_AT8u4VeKgUkDzUPFQim6uOBzOvCbv1fTypOWjfX_twuqlQ&oe=62DC2C4B" src={img2} />}>
+              <Slide
+                image={
+                  <img
+                    alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513602_5459907064065868_9194213757905239748_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=P06CFikdOOAAX_6k076&tn=o5ey6nqbzOgQXIue&_nc_ht=scontent.flcj1-1.fna&oh=00_AT8u4VeKgUkDzUPFQim6uOBzOvCbv1fTypOWjfX_twuqlQ&oe=62DC2C4B"
+                    src={img20}
+                  />
+                }
+              >
                 <Caption placement="left">
                   <h3>Etap I</h3>
                   <h5 className="light grey-text text-lighten-3">
@@ -66,7 +82,14 @@ const Home = () => {
                   </h5>
                 </Caption>
               </Slide>
-              <Slide image={<img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294672919_5459907117399196_2524468230845151601_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=6qlk3bNBgzkAX8vXidl&_nc_oc=AQkAOaD3aZEL3H83i7MLZ_sXzBmPJNJe7vccg2d4gywFNQtbAkC5PEhhvte2mMQWlxk&_nc_ht=scontent.flcj1-1.fna&oh=00_AT_VUdYDmTk2P1NsLrvTYtdAXIkEIvSkb4MNPeKYoXcFxg&oe=62DAEC5A" src={img3} />}>
+              <Slide
+                image={
+                  <img
+                    alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294672919_5459907117399196_2524468230845151601_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=6qlk3bNBgzkAX8vXidl&_nc_oc=AQkAOaD3aZEL3H83i7MLZ_sXzBmPJNJe7vccg2d4gywFNQtbAkC5PEhhvte2mMQWlxk&_nc_ht=scontent.flcj1-1.fna&oh=00_AT_VUdYDmTk2P1NsLrvTYtdAXIkEIvSkb4MNPeKYoXcFxg&oe=62DAEC5A"
+                    src={img21}
+                  />
+                }
+              >
                 <Caption placement="right">
                   <h3>Etap II</h3>
                   <h5 className="light grey-text text-lighten-3">Rozbudowa</h5>
@@ -94,20 +117,80 @@ const Home = () => {
               <Row />
               <Row />
               <Row>
-                <div className="left-align  ">
-                  Przedstawiamy Państwu naszą najnowszą inwestycję "Willę
-                  Złocień" – zlokalizowaną w Krynicy-Zdrój na wschodnim stoku
-                  Gory Parkowej!
-                  <br />
-                  Budynek położony jest w rewelacyjnej lokalizacji z dogodnym
-                  dojazdem. Jest to idealne miejsce dla osób ceniących sobie
-                  ciszę, spokój i naturę.
-                  <br />
-                  Wszystkich zainteresowanych naszą ofertą prosimy o kontakt
-                  mailowy lub telefoniczny.{" "}
-                </div>
                 <Col m={6} s={12}>
                   <Row />
+                  <div className="left-align  ">
+                    Willa Złocień - wyjątkowy obiekt w Krynicy-Zdrój
+                    <br />
+                    <br />
+                    <Divider />
+                    Chcielibyśmy zaprezentować Państwu Willę Złocień, niezwykły
+                    zabytkowy budynek zlokalizowany w malowniczej Krynicy-Zdrój.
+                    Ta urocza posiadłość to idealne miejsce na relaks,
+                    odpoczynek i odkrywanie uroków tego pięknego regionu. Z
+                    przyjemnością przedstawimy Wam tę unikatową nieruchomość.
+                    <br />
+                    <br />
+                    Mieszkania do Sprzedania
+                    <br />
+                    <Divider />
+                    Willa Złocień to nie tylko urokliwy budynek, ale również
+                    idealne miejsce do zamieszkania. W obiekcie znajduje się 11
+                    w pełni wyremontowanych i gotowych do zamieszkania mieszkań.
+                    Są one oferowane w podwyższonym standarcie deweloperskim. Te
+                    przestronne, nowocześnie apartamenty oferują komfortowe
+                    warunki życia w historycznym otoczeniu. To doskonała okazja
+                    dla tych, którzy szukają nie tylko urokliwego miejsca na
+                    wypoczynek, ale także nowego domu w sercu Krynicy-Zdrój.
+                    <br />
+                    <br />
+                    Historia
+                    <br />
+                    <Divider />
+                    To historyczne miejsce ma swoje korzenie sięgające okresu
+                    wczesnego modernizmu z początku lat dwudziestych XX wieku.
+                    Willa Złocień została odrestaurowana z dbałością o detale
+                    konserwatorskie, zachowując przy tym oryginalny charakter i
+                    urok. Jest to prawdziwy klejnot architektury z tamtych
+                    czasów, który został odnowiony, aby zachować swój dawny
+                    blask.
+                    <br />
+                    <br />
+                    Architektura i Design
+                    <br />
+                    <Divider />
+                    Budynek Willi Złocień to przykład znakomitego rzemiosła i
+                    architektury. Każdy detal został starannie przywrócony do
+                    życia, co czyni to miejsce nie tylko pięknym, ale również
+                    pełnym historii. Wyjątkowe elementy architektoniczne, takie
+                    jak zabytkowe okna czy oryginalne drewniane podłogi, dodają
+                    uroku i elegancji.
+                    <br />
+                    <br />
+                    Energooszczędność
+                    <br />
+                    <Divider />
+                    Willa Złocień to nie tylko miejsce z bogatą historią, ale
+                    również z nowoczesnymi rozwiązaniami energetycznymi. Budynek
+                    został wyposażony w nowoczesne systemy izolacyjne,
+                    energooszczędne ogrzewanie i oświetlenie . Dzięki temu dbamy
+                    o środowisko i obniżamy koszty eksploatacji.
+                    <br />
+                    <br />
+                    Podsumowanie
+                    <br />
+                    <Divider />
+                    Willa Złocień w Krynicy-Zdrój to idealne miejsce dla tych,
+                    którzy cenią zarówno historię, jak i nowoczesność. To
+                    wyjątkowy dom z unikatową historią, zachwycającą
+                    architekturą oraz dbałością o środowisko. Jeśli szukasz
+                    magicznego miejsca na wypoczynek w sercu gór, Willa Złocień
+                    jest dla Ciebie idealnym wyborem. Dziękujemy za uwagę, a
+                    teraz serdecznie zapraszamy do odwiedzenia Willi Złocień!
+                  </div>
+                </Col>
+
+                <Col m={6} s={12}>
                   <Row>
                     <Col s={4}>
                       <img src={autostrada} width="60%" />
@@ -141,11 +224,6 @@ const Home = () => {
                     </Col>
                   </Row>
                 </Col>
-
-                <Col m={6} s={12}>
-                  <Row />
-                  <img  src="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513970_5459907027399205_4461154066782848590_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q2hwhnNMoesAX9PUaYc&_nc_ht=scontent.flcj1-1.fna&oh=00_AT93HYM7NfpGoWebeEw1MrSlCxaHzYq-uBLr0oGnnLJd7Q&oe=62DBB30A" src={img1} width="100%" />
-                </Col>
               </Row>
             </Card>
           </div>
@@ -165,37 +243,59 @@ const Home = () => {
               <Row />
               <Row>
                 <Col m={6} s={12}>
-                  <div className="left-align  ">
+                  
+                  <div className="left-align">
+              
+                    
+                    Lokalziacja
+                    <Divider />
+                    Willa Złocień znajduje się w sercu Krynicy-Zdrój, otoczona
+                    przez piękne góry i przyrodę. Znajduje się tuż obok Góry
+                    Parkowej, co daje nieograniczone możliwości wędrówek po
+                    okolicznych szlakach turystycznych. Ta lokalizacja jest
+                    idealna dla miłośników aktywnego wypoczynku, spacerów i
+                    przejażdżek rowerowych.
+                    <br /><br />
+                    Krynica-Zdrój
+                    <Divider />
                     Miasto położone jest w Beskidzie Sądeckim, w dolinie potoku
                     Kryniczanka i jego dopływów. Krynica-Zdrój otaczają wzgórza
                     Góry Parkowej, Krzyżowej, Jasiennika. Miasto leży na terenie
                     Popradzkiego Parku Krajobrazowego, stanowi bazę wypadową w
-                    okoliczne góry. <br />
+                    okoliczne góry.  Uzdrowisko Krynica-Zdrój znajduje się we wschodniej części
+                    Pasma Jaworzyny Krynickiej – jednego z dwóch pasm Beskidu
+                    Sądeckiego.
+                    <br /><br />
+                    Ogród i Otoczenie
                     <br />
-                    <div className="left-align">
-                      Uzdrowisko Krynica-Zdrój znajduje się we wschodniej części
-                      Pasma Jaworzyny Krynickiej – jednego z dwóch pasm Beskidu
-                      Sądeckiego.
-                    </div>
-                    <br />
-                    <Row>
-                      <Col m={2}></Col>
-                      <Col m={8}>
-                        <div>
-                          <h5>
-                            <li>Centrum Krynicy - 1,3 km</li>
-                            <br />
-                            <li>Zrdeko "Ciurkacz" -50 m</li>
-                            <br />
-                            <li>Góra Parkowa - 2 km</li>
-                            <br />
-                            <li>Sklep Spożywczy - 100 m</li>
-                            <br />
-                          </h5>
-                        </div>
-                      </Col>
-                    </Row>
+                    <Divider />
+                    Otoczenie Willi Złocień to prawdziwy raj dla miłośników
+                    przyrody. Oprócz Góry Parkowej w okolicy znajdują się liczne
+                    ścieżki piesze i rowerowe, które pozwalają na aktywny
+                    wypoczynek na świeżym powietrzu. Ogród wokół willi to
+                    miejsce, gdzie można odpocząć, napić się herbaty i cieszyć
+                    się spokojem.
+                    
+                   
                   </div>
+                  <br />
+                  <Row>
+                    <Col m={2}></Col>
+                    <Col m={8}>
+                      <div>
+                        
+                          <li>Centrum Krynicy - 1,3 km</li>
+                          <br />
+                          <li>Zrdeko "Ciurkacz" -50 m</li>
+                          <br />
+                          <li>Góra Parkowa - 2 km</li>
+                          <br />
+                          <li>Sklep Spożywczy - 100 m</li>
+                          <br />
+                       
+                      </div>
+                    </Col>
+                  </Row>
                 </Col>
                 <Col m={6} s={12}>
                   <Iframe
@@ -212,7 +312,7 @@ const Home = () => {
             </Card>
           </div>
         </Row>
-        <Row>
+        {/* <Row>
           <div
             data-aos="fade-right"
             data-aos-duration="2000"
@@ -302,7 +402,7 @@ const Home = () => {
               </Row>
             </Card>
           </div>
-        </Row>
+        </Row> */}
         <Row>
           <div
             data-aos="fade-right"
@@ -314,17 +414,18 @@ const Home = () => {
                 Terminy <Divider />
                 <Row />
                 <Col s={12} m={4}>
-                  Zakończenie Etapu 1 -<br/> planowane na 2 kwartał 2023 roku
+                  Zakończenie Etapu 1 -<br /> planowane na 4 kwartał 2023 roku
                   <br />
                 </Col>
                 <Col s={12} m={4}>
-                  Zakończenie Etapu 2 - 
-                  <br/>
+                  Rozpoczęcie Etapu 2 -
+                  <br />
                   planowane na 2 kwartał 2024 roku
                   <br />
                 </Col>
                 <Col s={12} m={4}>
-                  Rzopoczęcie sprzedarzy<br/> 1 kwartał 2022 roku
+                  Rzopoczęcie sprzedarzy
+                  <br /> 1 kwartał 2022 roku
                   <br />
                 </Col>
                 <Row>
