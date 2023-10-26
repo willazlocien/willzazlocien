@@ -76,7 +76,7 @@ const Lokale = () => {
       </Card>
       <Card className="z-depth-5 white">
         <h5>
-          Etap II - Rozbudowa planowana na 2022/2023 rok <Divider />
+          Etap II - Rozbudowa planowana na 2024 rok <Divider />
         </h5>
         <Row />
       </Card>
