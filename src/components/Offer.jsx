@@ -11,6 +11,8 @@ import marketing from "../components/svg/marketing.svg";
 import interrior from "../components/svg/interrior.svg";
 import bim from "../components/svg/bim.svg";
 import Lokale from "../components/Lokale"
+import Nav from "./Nav";
+import NavMobile from "./NavMobile";
 
 const Offer = () => {
   useEffect(() => {
@@ -23,6 +25,14 @@ const Offer = () => {
   else
     return (
  <Row>
+    <br />
+            <div className="hide-on-small-only">
+              <Nav />
+            </div>
+            <div className="hide-on-med-and-up">
+              <NavMobile />
+            </div>
+            <br />
    <Lokale/>
  </Row>
       );

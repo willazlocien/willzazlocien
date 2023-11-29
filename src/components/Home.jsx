@@ -1,11 +1,15 @@
 import "materialize-css";
 import React, { useEffect } from "react";
+import Nav from "./Nav";
+import NavMobile from "./NavMobile";
 import {
   Col,
   Divider,
   Row,
   Slide,
   Caption,
+  Button,
+  Modal,
   Card,
   Slider,
 } from "react-materialize";
@@ -36,6 +40,14 @@ const Home = () => {
 
   return (
     <Row className="black">
+      <br />
+            <div className="hide-on-small-only">
+              <Nav />
+            </div>
+            <div className="hide-on-med-and-up">
+              <NavMobile />
+            </div>
+            <br />
       <Col s={12} m={10} push="m1  s0">
         <div className="standart"></div>
         <Row className="">
@@ -439,7 +451,9 @@ const Home = () => {
           </div>
         </Row>
       </Col>
+      
     </Row>
+    
   );
 };
 

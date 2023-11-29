@@ -6,6 +6,9 @@ import "aos/dist/aos.css";
 import arch from "../components/svg/arch.svg";
 import ogrod from "../components/svg/ogrod.svg";
 import interrior from "../components/svg/interrior.svg";
+import Nav from "./Nav";
+import NavMobile from "./NavMobile";
+
 const Portfolio = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -15,6 +18,14 @@ const Portfolio = () => {
 
     return (
       <Row className="">
+          <br />
+            <div className="hide-on-small-only">
+              <Nav />
+            </div>
+            <div className="hide-on-med-and-up">
+              <NavMobile />
+            </div>
+            <br />
         <div
           // data-aos="fade-left"
           // data-aos-duration="3000"

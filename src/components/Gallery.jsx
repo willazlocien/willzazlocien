@@ -1,6 +1,8 @@
 import "materialize-css";
 import React from "react";
 import { Col, MediaBox, Row } from "react-materialize";
+import Nav from "./Nav";
+import NavMobile from "./NavMobile";
 
 let img19 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp"
 let img20 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-2.webp"
@@ -18,6 +20,14 @@ export default class Gallery extends React.Component {
   render() {
     return (
       <Row className="black">
+          <br />
+            <div className="hide-on-small-only">
+              <Nav />
+            </div>
+            <div className="hide-on-med-and-up">
+              <NavMobile />
+            </div>
+            <br />
         <Row/><div className="standart"></div>
         <Col s={12} m={6}>
           <MediaBox

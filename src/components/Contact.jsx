@@ -5,7 +5,8 @@ import { CardPanel, Col, Row } from "react-materialize";
 import Button from "react-materialize/lib/Button";
 // import emailjs from "emailjs-com";
 import Iframe from "react-iframe";
-
+import Nav from "./Nav";
+import NavMobile from "./NavMobile";
 // function sendEmail(e) {
 //   e.preventDefault();
 
@@ -136,6 +137,14 @@ class Contact extends React.Component {
     // else
       return (
         <div>
+            <br />
+            <div className="hide-on-small-only">
+              <Nav />
+            </div>
+            <div className="hide-on-med-and-up">
+              <NavMobile />
+            </div>
+            <br />
           <Row>
             <Col m={4} s={12} offset="m1">
               <Button
