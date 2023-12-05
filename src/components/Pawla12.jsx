@@ -156,7 +156,7 @@ useEffect(() => {
       <Modal
         className="modalid"
         actions={[
-          <Button flat modal="close" node="button" waves="green">
+          <Button flat modal="close" node="button" small waves="green">
             Zamknij
           </Button>,
         ]}
@@ -230,7 +230,7 @@ useEffect(() => {
         {items}
       </Col>
       <Col s={2}>
-        Rzut <br/><Row/><Row/><Row/>
+        Rzut <br/><Row/><Row/>
         {items2}</Col>
     </Row>
     </div>
