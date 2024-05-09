@@ -13,7 +13,7 @@ import NavMobile from "./components/NavMobile";
 import TypA from "./components/TypA";
 import test from "./components/test";
 import DocumentMeta from "react-document-meta";
-import Welcome from "./components/Standart";
+import Welcome from "./components/Standard";
 import Pawla12 from "./components/Pawla12";
 import Pawla12zmiany from "./components/Pawla12zmiany"
 

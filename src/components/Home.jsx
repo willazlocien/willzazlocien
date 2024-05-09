@@ -49,7 +49,7 @@ const Home = () => {
             </div>
             <br />
       <Col s={12} m={10} push="m1  s0">
-        <div className="standart"></div>
+        <div className="standard"></div>
         <Row className="">
           <Row />
           <Row />

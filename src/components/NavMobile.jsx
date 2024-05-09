@@ -236,7 +236,7 @@ const Nav = () => {
   //   </NavItem>
   //   <NavItem className=" "  href="portfolio">
 
-  //             Standart
+  //             Standard
 
   //   </NavItem>
   //   <NavItem className=""

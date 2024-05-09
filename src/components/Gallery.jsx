@@ -28,7 +28,7 @@ export default class Gallery extends React.Component {
               <NavMobile />
             </div>
             <br />
-        <Row/><div className="standart"></div>
+        <Row/><div className="standard"></div>
         <Col s={12} m={6}>
           <MediaBox
             className="z-depth-3"

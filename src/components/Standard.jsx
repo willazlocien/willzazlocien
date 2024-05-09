@@ -16,7 +16,7 @@ import {
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 
-const Standart = () => {
+const Standard = () => {
 
 
 
@@ -40,8 +40,8 @@ const Standart = () => {
             O inwestycji
           </Link>
 <br/><br/>
-          <Link to="standart" className="btn red navbaritem">
-            Standart
+          <Link to="standard" className="btn red navbaritem">
+            Standard
           </Link>
           <br/><br/>
           <Link to="offer" className="btn red navbaritem" >
@@ -242,4 +242,4 @@ const Standart = () => {
   );
 };
 
-export default Standart;
+export default Standard;
