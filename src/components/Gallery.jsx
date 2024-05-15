@@ -12,9 +12,10 @@ let img1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/sr
 let img5 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 05.webp";
 let img12 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 12.webp";
 
-
-
-
+let imgh1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol1.webp";
+let imgh2 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol2.webp";
+let imgh3 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol3.webp";
+let imgh4 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol4.webp";
 
 export default class Gallery extends React.Component {
   render() {
@@ -148,8 +149,74 @@ export default class Gallery extends React.Component {
           </MediaBox>
           <Row />
         </Col>
-   
-   
+        <Col s={12} m={6}>
+          <MediaBox
+            className="z-depth-3"
+            id="MediaBox_6"
+            options={{
+              inDuration: 275,
+              onCloseEnd: null,
+              onCloseStart: null,
+              onOpenEnd: null,
+              onOpenStart: null,
+              outDuration: 200,
+            }}
+          >
+            <img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294285645_5459907120732529_7665346751386665222_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=F5hvg0x1KGYAX8EMmup&_nc_ht=scontent.flcj1-1.fna&oh=00_AT-n2xG634dG3_tg96lx8AaM_ei7oUDvI6PCOiBlNM9DSA&oe=62DB3163" src={imgh1} width="100%" />
+          </MediaBox>
+          <Row />
+        </Col>
+        <Col s={12} m={6}>
+          <MediaBox
+            className="z-depth-3"
+            id="MediaBox_6"
+            options={{
+              inDuration: 275,
+              onCloseEnd: null,
+              onCloseStart: null,
+              onOpenEnd: null,
+              onOpenStart: null,
+              outDuration: 200,
+            }}
+          >
+            <img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294285645_5459907120732529_7665346751386665222_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=F5hvg0x1KGYAX8EMmup&_nc_ht=scontent.flcj1-1.fna&oh=00_AT-n2xG634dG3_tg96lx8AaM_ei7oUDvI6PCOiBlNM9DSA&oe=62DB3163" src={imgh2} width="100%" />
+          </MediaBox>
+          <Row />
+        </Col>
+        <Col s={12} m={6}>
+          <MediaBox
+            className="z-depth-3"
+            id="MediaBox_6"
+            options={{
+              inDuration: 275,
+              onCloseEnd: null,
+              onCloseStart: null,
+              onOpenEnd: null,
+              onOpenStart: null,
+              outDuration: 200,
+            }}
+          >
+            <img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294285645_5459907120732529_7665346751386665222_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=F5hvg0x1KGYAX8EMmup&_nc_ht=scontent.flcj1-1.fna&oh=00_AT-n2xG634dG3_tg96lx8AaM_ei7oUDvI6PCOiBlNM9DSA&oe=62DB3163" src={imgh3} width="100%" />
+          </MediaBox>
+          <Row />
+        </Col>
+        <Col s={12} m={6}>
+          <MediaBox
+            className="z-depth-3"
+            id="MediaBox_6"
+            options={{
+              inDuration: 275,
+              onCloseEnd: null,
+              onCloseStart: null,
+              onOpenEnd: null,
+              onOpenStart: null,
+              outDuration: 200,
+            }}
+          >
+            <img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294285645_5459907120732529_7665346751386665222_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=F5hvg0x1KGYAX8EMmup&_nc_ht=scontent.flcj1-1.fna&oh=00_AT-n2xG634dG3_tg96lx8AaM_ei7oUDvI6PCOiBlNM9DSA&oe=62DB3163" src={imgh4} width="100%" />
+          </MediaBox>
+          <Row />
+        </Col>
       
         {/* <Col s={12} m={6}>
           <MediaBox
