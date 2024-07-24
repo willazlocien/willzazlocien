@@ -436,7 +436,7 @@ const Home = () => {
                   <br />
                 </Col>
                 <Col s={12} m={4}>
-                  Rzopoczęcie sprzedaży
+                  Rozpoczęcie sprzedaży
                   <br /> 1 kwartał 2022 roku
                   <br />
                 </Col>
