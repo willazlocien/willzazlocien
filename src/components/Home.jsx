@@ -432,11 +432,11 @@ const Home = () => {
                 <Col s={12} m={4}>
                   Rozpoczęcie Etapu 2 -
                   <br />
-                  planowane na 2 kwartał 2024 roku
+                  planowane na 2 kwartał 2025 roku
                   <br />
                 </Col>
                 <Col s={12} m={4}>
-                  Rzopoczęcie sprzedarzy
+                  Rzopoczęcie sprzedaży
                   <br /> 1 kwartał 2022 roku
                   <br />
                 </Col>
