@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-pdf/font": "2.2.0",
+    "@react-pdf/renderer": " 2.1.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.2",
@@ -11,19 +13,21 @@
     "emailjs-com": "^2.6.4",
     "firebase": "^9.8.2",
     "googleapis": "^100.0.0",
-    "leaflet": "^1.7.1",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^17.0.1",
     "react-document-meta": "^3.0.0-beta.2",
     "react-dom": "^17.0.1",
     "react-iframe": "^1.8.0",
     "react-image-gallery": "^1.0.9",
-    "react-leaflet": "^3.1.0",
     "react-materialize": "^3.9.7",
+    "react-pdf": "^9.1.0",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"
+  },
+  "resolutions": {
+    "@react-pdf/font": "2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.25.2"
   }
 }

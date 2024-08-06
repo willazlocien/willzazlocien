@@ -1,6 +1,6 @@
 import "materialize-css";
 import React from "react";
-import "react-leaflet";
+
 import { CardPanel, Col, Row } from "react-materialize";
 import Button from "react-materialize/lib/Button";
 // import emailjs from "emailjs-com";
