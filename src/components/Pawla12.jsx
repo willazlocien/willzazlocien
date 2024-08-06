@@ -1,57 +1,57 @@
 import db from "./firebase.config";
 import React, { useState, useEffect } from "react";
-import { PDFViewer } from '@react-pdf/renderer';
+
 import "materialize-css";
 import { Divider, Button, Modal, Col, Row } from "react-materialize";
-// import { Document, Page } from 'react-pdf';
 
-import lokalm01 from "./svg/M01.pdf";
-import lokalm02 from "./svg/M02.pdf";
-import lokalm03 from "./svg/M03.pdf";
-import lokalm04 from "./svg/M04.pdf";
-import lokalm05 from "./svg/M05.pdf";
-import lokalm06 from "./svg/M06.pdf";
-import lokalm07 from "./svg/M07.pdf";
-import lokalm08 from "./svg/M08.pdf";
-// import lokalm08 from "./svg/M08.pdf";
-import lokalm11 from "./svg/M11.pdf";
+
+import lokalm01 from "./svg/0001.svg";
+import lokalm02 from "./svg/0002.svg";
+import lokalm03 from "./svg/0003.svg";
+import lokalm04 from "./svg/0004.svg";
+import lokalm05 from "./svg/0019.svg";
+import lokalm06 from "./svg/0020.svg";
+import lokalm07 from "./svg/0021.svg";
+import lokalm08 from "./svg/0022.svg";
+// import lokalm08 from "./svg/M08.svg";
+import lokalm11 from "./svg/0005.svg";
 // import lokalm12 from "./svg/M12.svg";
-import lokalm13 from "./svg/M13.pdf";
-import lokalm14 from "./svg/M14.pdf";
-import lokalm15 from "./svg/M15.pdf";
-import lokalm16 from "./svg/M16.pdf";
-import lokalm17 from "./svg/M17.pdf";
-import lokalm18 from "./svg/M18.pdf";
-import lokalm19 from "./svg/M19.pdf";
-import lokalm110 from "./svg/M110.pdf";
-import lokalm111 from "./svg/M111.pdf";
+import lokalm13 from "./svg/0007.svg";
+import lokalm14 from "./svg/0008.svg";
+import lokalm15 from "./svg/0009.svg";
+import lokalm16 from "./svg/0023.svg";
+import lokalm17 from "./svg/0024.svg";
+import lokalm18 from "./svg/0025.svg";
+import lokalm19 from "./svg/0026.svg";
+import lokalm110 from "./svg/0027.svg";
+import lokalm111 from "./svg/0006.svg";
 
-import lokalm21 from "./svg/M21.pdf";
-import lokalm22 from "./svg/M22.pdf";
-import lokalm23 from "./svg/M23.pdf";
-import lokalm24 from "./svg/M24.pdf";
-import lokalm25 from "./svg/M25.pdf";
-import lokalm26 from "./svg/M26.pdf";
-import lokalm27 from "./svg/M27.pdf";
-import lokalm28 from "./svg/M28.pdf";
-import lokalm29 from "./svg/M29.pdf";
+import lokalm21 from "./svg/0010.svg";
+import lokalm22 from "./svg/0011.svg";
+import lokalm23 from "./svg/0012.svg";
+import lokalm24 from "./svg/0013.svg";
+import lokalm25 from "./svg/0014.svg";
+import lokalm26 from "./svg/0028.svg";
+import lokalm27 from "./svg/0029.svg";
+import lokalm28 from "./svg/0030.svg";
+import lokalm29 from "./svg/0031.svg";
 
-import lokalm31 from "./svg/M31.pdf";
-import lokalm32 from "./svg/M32.pdf";
-import lokalm32A from "./svg/M32A.pdf"
-import lokalm34 from "./svg/M34.pdf";
-import lokalm33 from "./svg/M33.pdf";
-import lokalm35 from "./svg/M35.pdf";
-import lokalm36 from "./svg/M36.pdf";
-import lokalm37 from "./svg/M37.pdf";
+import lokalm31 from "./svg/0015.svg";
+import lokalm32 from "./svg/0016.svg";
+import lokalm32A from "./svg/0018.svg"
+import lokalm34 from "./svg/0032.svg";
+import lokalm33 from "./svg/0017.svg";
+import lokalm35 from "./svg/0033.svg";
+import lokalm36 from "./svg/0034.svg";
+import lokalm37 from "./svg/0035.svg";
 
-import lokalm41 from "./svg/M41.pdf";
-import lokalm42 from "./svg/M42.pdf";
-import lokalm43 from "./svg/M43.pdf";
-import lokalm44 from "./svg/M44.pdf";
+import lokalm41 from "./svg/0036.svg";
+import lokalm42 from "./svg/0037.svg";
+import lokalm43 from "./svg/0038.svg";
+import lokalm44 from "./svg/0039.svg";
 
-import lokalm51 from "./svg/M51.pdf";
-import lokalm52 from "./svg/M52.pdf";
+import lokalm51 from "./svg/0040.svg";
+import lokalm52 from "./svg/0041.svg";
 
 const Lista = [
   { id: "lokalm01", lokal: lokalm01, active: "" },
@@ -209,14 +209,14 @@ const Read = () => {
               <Divider />
 
 
-              <iframe src={data.lokal} width="100%" height={1200} />
+          
 
 
-              {/* <img src={data.lokal} width="100%" /> */}
+              <img src={data.lokal} width="100%" />
             </Row>
           </Modal>
         </Col>
-        {/* <Col className="tabela hide-on-med-and-up" s={12}>
+        <Col className="tabela hide-on-med-and-up" s={12}>
           <Modal
             className="modalid"
             actions={[
@@ -251,16 +251,10 @@ const Read = () => {
             <Row>
               <Divider />
 
-           <PDFViewer
-              height={300}
-              width={300}
-              renderMode='svg'
-              >
-                {data.lokal}
-              </PDFViewer>
+              <img src={data.lokal} width="100%" />
             </Row>
           </Modal>
-        </Col> */}
+        </Col>
       </Row>
     );
   });
@@ -293,7 +287,7 @@ const Read = () => {
           </Row>
           {items}
         </Col>
-        <Col className="tabela hide-on-small-only" s={2}>
+        <Col className="tabela" s={2}>
           Rzut <br />
           <Row /> <Row />
 
