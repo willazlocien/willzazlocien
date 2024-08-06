@@ -216,7 +216,7 @@ const Read = () => {
             </Row>
           </Modal>
         </Col>
-        <Col className="tabela hide-on-med-and-up" s={12}>
+        {/* <Col className="tabela hide-on-med-and-up" s={12}>
           <Modal
             className="modalid"
             actions={[
@@ -254,7 +254,7 @@ const Read = () => {
               <img src={data.lokal} width="100%" />
             </Row>
           </Modal>
-        </Col>
+        </Col> */}
       </Row>
     );
   });
