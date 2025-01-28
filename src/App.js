@@ -40,11 +40,11 @@ function App() {
               <Col s={12} className="appbg">
                 <Switch>
                   <Route path="/home" component={Home} />
-                  <Route path="/contact" component={Contact} />
-                  <Route path="/offer" component={Offer} />
+                  <Route path="/kontakt" component={Contact} />
+                  <Route path="/lokale" component={Offer} />
                   <Route path="/standard" component={Portfolio} />
                   <Route path="/wprowadzzmiany" component={TypA} />
-                  <Route path="/gallery" component={Gallery} />
+                  <Route path="/galeria" component={Gallery} />
                   <Route path="/test" component={test} />
                   <Route path="/pawla12" component={Pawla12} />
                   <Route path="/wprowadzzmianypawla12" component={Pawla12zmiany} />
@@ -239,9 +239,11 @@ function App() {
                           <h5 className="black-text left-align">
                             Idea Development sp. z o.o.
                             <br />
-                            +48 794 055 035
+                            <a href='tel:+48794055035'>+48 794 055 035</a>
+                            
                             <br />
-                            Leszek.kraus@poczta.onet.pl
+                            <a href='mailto:Leszek.kraus@poczta.onet.pl'>Leszek.kraus@poczta.onet.pl</a>
+                            
                             <br />
                             Rakowicka 15 31-511 Krakow
                             <br />

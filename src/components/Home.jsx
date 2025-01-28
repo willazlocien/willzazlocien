@@ -23,6 +23,8 @@ import silence from "./svg/silence.svg";
 import windows from "./svg/windows.svg";
 import layout from "./svg/layout.svg";
 import arrow from "./svg/arrow.svg";
+import { Helmet } from "react-helmet";
+
 let img19 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp"
 let img20 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-2.webp"
 let img21 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-3.webp"
@@ -40,6 +42,15 @@ const Home = () => {
 
   return (
     <Row className="black">
+          <Helmet>
+          <title>Home</title>
+          <meta name="description" content="Willa Złocień w Krynicy-Zdrój" />
+          <meta property="og:image" content="https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp" />
+          <link
+            rel="canonical"
+            href="https://willazlocien.com/home"
+          />
+          </Helmet>
       <br />
             <div className="hide-on-small-only">
               <Nav />

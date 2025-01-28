@@ -15,6 +15,7 @@ import {
 
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
+import { Helmet } from "react-helmet";
 
 const Standard = () => {
 
@@ -23,7 +24,15 @@ const Standard = () => {
 
   return (
 <div className="home">
-
+<Helmet>
+          <title>Standard</title>
+          <meta name="description" content="Standard wykończenia Willi Złocień w Krynicy-Zdrój" />
+          <meta property="og:image" content="https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp" />
+          <link
+            rel="canonical"
+            href="https://willazlocien.com/standard"
+          />
+          </Helmet>
 <br />
             <div className="hide-on-small-only">
               <Nav />

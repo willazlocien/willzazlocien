@@ -7,6 +7,7 @@ import Button from "react-materialize/lib/Button";
 import Iframe from "react-iframe";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
+import { Helmet } from "react-helmet";
 // function sendEmail(e) {
 //   e.preventDefault();
 
@@ -135,16 +136,25 @@ class Contact extends React.Component {
     //     </div>
     //   );
     // else
-      return (
-        <div>
-            <br />
-            <div className="hide-on-small-only">
-              <Nav />
-            </div>
-            <div className="hide-on-med-and-up">
-              <NavMobile />
-            </div>
-            <br />
+    return (
+      <div>
+        <Helmet>
+          <title>Kontakt</title>
+          <meta name="description" content="Skontaqktuj się z nami w celu zakupu mieszkań w Willi Złocień w Krynicy-Zdrój" />
+          <meta property="og:image" content="https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp" />
+          <link
+            rel="canonical"
+            href="https://willazlocien.com/kontakt"
+          />
+          </Helmet>
+          <br />
+          <div className="hide-on-small-only">
+            <Nav />
+          </div>
+          <div className="hide-on-med-and-up">
+            <NavMobile />
+          </div>
+          <br />
           <Row>
             <Col m={4} s={12} offset="m1">
               <Button
@@ -189,7 +199,7 @@ class Contact extends React.Component {
                 Rakowicka 15
                 <br />
                 31-511 Krakow
-                <br />T : +48 794 055 035 
+                <br />T : +48 794 055 035
                 <br />
                 E: Leszek.kraus@poczta.onet.pl
               </CardPanel>
@@ -216,8 +226,8 @@ class Contact extends React.Component {
               </CardPanel>
             </Col>
           </Row>
-        </div>
-      );
+      </div>
+    );
   }
 }
 export default Contact;

@@ -3,7 +3,7 @@ import React from "react";
 import { Col, MediaBox, Row } from "react-materialize";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
-
+import { Helmet } from "react-helmet";
 let img19 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp"
 let img20 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-2.webp"
 let img21 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-3.webp"
@@ -17,10 +17,22 @@ let imgh2 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/s
 let imgh3 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol3.webp";
 let imgh4 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol4.webp";
 
+
+
 export default class Gallery extends React.Component {
   render() {
     return (
+      
       <Row className="black">
+          <Helmet>
+          <title>Galeria</title>
+          <meta name="description" content="Galeria zdjęć willa Złocień w Krynicy-Zdrój" />
+          <meta property="og:image" content="https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp" />
+          <link
+            rel="canonical"
+            href="https://willazlocien.com/galeria"
+          />
+        </Helmet>
           <br />
             <div className="hide-on-small-only">
               <Nav />

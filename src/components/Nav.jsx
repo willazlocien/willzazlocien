@@ -26,13 +26,13 @@ const Nav = () => {
             Standard
           </Link>
           
-          <Link to="offer" className="btn red navbaritem" >
+          <Link to="lokale" className="btn red navbaritem" >
             Lokale
           </Link>
-          <Link to="gallery" className="btn red navbaritem">
+          <Link to="galeria" className="btn red navbaritem">
             Galeria
           </Link>
-          <Link to="contact" className="btn red navbaritem">
+          <Link to="kontakt" className="btn red navbaritem">
             Kontakt
           </Link>
        </div>

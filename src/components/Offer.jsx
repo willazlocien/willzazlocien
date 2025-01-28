@@ -12,6 +12,7 @@ import interrior from "../components/svg/interrior.svg";
 import bim from "../components/svg/bim.svg";
 import Lokale from "../components/Lokale"
 import Nav from "./Nav";
+import { Helmet } from "react-helmet";
 import NavMobile from "./NavMobile";
 
 const Offer = () => {
@@ -20,22 +21,30 @@ const Offer = () => {
   }, []);
 
   let lang = localStorage.getItem("lang");
+  return (
+    
 
-  if (lang == "en") return <Row>  <Lokale/></Row>;
-  else
-    return (
- <Row>
-    <br />
-            <div className="hide-on-small-only">
-              <Nav />
-            </div>
-            <div className="hide-on-med-and-up">
-              <NavMobile />
-            </div>
-            <br />
-   <Lokale/>
- </Row>
+      <Row>
+        <Helmet>
+          <title>Lokale</title>
+          <meta name="description" content="Oferta mieszkań dla Willa Złocień w Krynicy-Zdrój" />
+          <meta property="og:image" content="https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp" />
+          <link
+            rel="canonical"
+            href="https://willazlocien.com/lokale"
+          />
+          </Helmet>
+          <br />
+          <div className="hide-on-small-only">
+            <Nav />
+          </div>
+          <div className="hide-on-med-and-up">
+            <NavMobile />
+          </div>
+          <br />
+          <Lokale />
+      </Row>
       );
 };
 
-export default Offer;
+      export default Offer;

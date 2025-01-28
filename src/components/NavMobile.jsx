@@ -50,13 +50,13 @@ const Nav = () => {
         <NavItem className=" " href="standard">
           Standard
         </NavItem>
-        <NavItem className="" href="offer">
+        <NavItem className="" href="oferta">
           Lokale
         </NavItem>
-        <NavItem className="" href="gallery">
+        <NavItem className="" href="galeria">
           Galeria
         </NavItem>
-        <NavItem className="" href="contact">
+        <NavItem className="" href="kontakt">
           Kontakt
         </NavItem>
         <NavItem>
