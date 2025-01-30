@@ -444,7 +444,7 @@ const Lista = [
           startingTop: "4%",
         }}
         trigger={
-          <Button disabled className="red" node="button"   small>
+          <Button  className="red" node="button"   small>
             Rzut
           </Button>
         }
@@ -780,7 +780,7 @@ const Lista = [
           startingTop: "4%",
         }}
         trigger={
-          <Button disabled className="red" node="button"   small>
+          <Button  className="red" node="button"   small>
             Rzut
           </Button>
         }
@@ -1076,7 +1076,7 @@ const Lista = [
           startingTop: "4%",
         }}
         trigger={
-          <Button disabled className="red" node="button"   small>
+          <Button  className="red" node="button"   small>
             Rzut
           </Button>
         }
@@ -1203,7 +1203,7 @@ const Lista = [
           startingTop: "4%",
         }}
         trigger={
-          <Button disabled className="red" node="button"   small>
+          <Button  className="red" node="button"   small>
             Rzut
           </Button>
         }
