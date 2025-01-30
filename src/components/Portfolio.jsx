@@ -68,7 +68,7 @@ const Portfolio = () => {
             <div className="left-align">
               <li>Garaż podziemny</li>
               <li>Basen dla mieszkańców</li>
-
+              <li>Balkony i tarasy</li>
               <li>Duże przeszklenia</li>
               <li>Pompa ciepła</li>
               <li>Winda</li>

@@ -50,7 +50,7 @@ const Nav = () => {
         <NavItem className=" " href="standard">
           Standard
         </NavItem>
-        <NavItem className="" href="oferta">
+        <NavItem className="" href="lokale">
           Lokale
         </NavItem>
         <NavItem className="" href="galeria">
