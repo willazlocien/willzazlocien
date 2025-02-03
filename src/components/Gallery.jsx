@@ -126,7 +126,7 @@ export default class Gallery extends React.Component {
               outDuration: 200,
             }}
           >
-            <img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513970_5459907027399205_4461154066782848590_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q2hwhnNMoesAX9PUaYc&_nc_ht=scontent.flcj1-1.fna&oh=00_AT93HYM7NfpGoWebeEw1MrSlCxaHzYq-uBLr0oGnnLJd7Q&oe=62DBB30A" src={scene9} width="100%" />
+            <img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513970_5459907027399205_4461154066782848590_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q2hwhnNMoesAX9PUaYc&_nc_ht=scontent.flcj1-1.fna&oh=00_AT93HYM7NfpGoWebeEw1MrSlCxaHzYq-uBLr0oGnnLJd7Q&oe=62DBB30A" src={scene8} width="100%" />
           </MediaBox>
           <Row />
         </Col>

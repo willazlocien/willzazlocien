@@ -122,7 +122,7 @@ useEffect(() => {
         </Row>
         {items}
       </Col>
-      {/* <Col s={2}>{items2}</Col> */}
+      <Col s={2}>{items2}</Col>
     </Row>
   );
 };

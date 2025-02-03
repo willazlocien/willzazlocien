@@ -24,7 +24,8 @@ import windows from "./svg/windows.svg";
 import layout from "./svg/layout.svg";
 import arrow from "./svg/arrow.svg";
 import { Helmet } from "react-helmet";
-
+import scene8 from "../components/img/Scene 8.webp"
+import scene9 from "../components/img/Scene 9.webp"
 let img19 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp"
 let img20 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-2.webp"
 let img21 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-3.webp"
@@ -99,7 +100,7 @@ const Home = () => {
                 }
               >
                 <Caption placement="left">
-                  <h3>Etap I</h3>
+                  <h3>Zakończono Etap I</h3>
                   <h5 className="light grey-text text-lighten-3">
                     Rewitalziacja Willi
                   </h5>
@@ -109,12 +110,12 @@ const Home = () => {
                 image={
                   <img
                     alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294672919_5459907117399196_2524468230845151601_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=6qlk3bNBgzkAX8vXidl&_nc_oc=AQkAOaD3aZEL3H83i7MLZ_sXzBmPJNJe7vccg2d4gywFNQtbAkC5PEhhvte2mMQWlxk&_nc_ht=scontent.flcj1-1.fna&oh=00_AT_VUdYDmTk2P1NsLrvTYtdAXIkEIvSkb4MNPeKYoXcFxg&oe=62DAEC5A"
-                    src={img21}
+                    src={scene9}
                   />
                 }
               >
                 <Caption placement="right">
-                  <h3>Etap II</h3>
+                  <h3>Planowany Etap II</h3>
                   <h5 className="light grey-text text-lighten-3">Rozbudowa</h5>
                 </Caption>
               </Slide>
@@ -437,13 +438,13 @@ const Home = () => {
                 Terminy <Divider />
                 <Row />
                 <Col s={12} m={4}>
-                  Zakończenie Etapu 1 -<br /> planowane na 4 kwartał 2023 roku
+                  Zakończono Etap 1 -<br /> 
                   <br />
                 </Col>
                 <Col s={12} m={4}>
                   Rozpoczęcie Etapu 2 -
                   <br />
-                  planowane na 2 kwartał 2025 roku
+                  planowane na 2025 rok
                   <br />
                 </Col>
                 <Col s={12} m={4}>
