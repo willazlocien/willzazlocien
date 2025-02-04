@@ -20,7 +20,7 @@ import lokalm16 from "./svg/M16.svg";
 import lokalm17 from "./svg/M17.svg";
 import lokalm18 from "./svg/M18.svg";
 import lokalm19 from "./svg/M19.svg";
-import lokalm21 from "./svg/M21.svg";
+import lokalm21 from "./svg/M19.svg";
 import lokalm22 from "./svg/M22.svg";
 import lokalm23 from "./svg/M23.svg";
 import lokalm24 from "./svg/M24.svg";

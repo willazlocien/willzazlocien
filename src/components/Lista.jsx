@@ -2,41 +2,33 @@ import React from "react";
 import { Table, Button, Modal, Row, Col,  } from "react-materialize";
 import Divider from "react-materialize/lib/Divider";
 import lokal11 from "./svg/M.1.1 .svg"
-import lokal12 from "./svg/M.1.2.svg"
-
-import lokal21 from "./svg/M.2.1 .svg"
+import lokal12 from "./svg/M12.svg"
+import lokal21 from "./svg/M12.svg"
 import lokal22 from "./svg/M.2.2.svg"
 import lokal23 from "./svg/M.2.3.svg"
 import lokal24 from "./svg/M.2.3.svg"
-
-import lokal25 from "./svg/m25-1.svg"
-import lokal26 from "./svg/m26-1.svg"
-import lokal27 from "./svg/m27-1.svg"
-import lokal28 from "./svg/m28-1.svg"
-
+import lokal25 from "./svg/M25.svg"
+import lokal26 from "./svg/M26.svg"
+import lokal27 from "./svg/M27.svg"
+import lokal28 from "./svg/M28.svg"
 import lokal31 from "./svg/M.3.2.svg"
 import lokal32 from "./svg/M.3.2.svg"
 import lokal33 from "./svg/M.3.3.svg"
 import lokal34 from "./svg/M.3.3.svg"
-
-import lokal35 from "./svg/m35-1.svg"
-import lokal36 from "./svg/m36-1.svg"
-import lokal37 from "./svg/m37-1.svg"
-import lokal38 from "./svg/m38-1.svg"
-
+import lokal35 from "./svg/M35.svg"
+import lokal36 from "./svg/M36.svg"
+import lokal37 from "./svg/M37.svg"
+import lokal38 from "./svg/M38.svg"
 import lokal41 from "./svg/M.3.3.svg"
 import lokal42 from "./svg/M.3.3.svg"
 import lokal43 from "./svg/M.3.3.svg"
-
-import lokal44 from "./svg/m44-1.svg"
-import lokal45 from "./svg/m45-1.svg"
-import lokal46 from "./svg/m46-1.svg"
-import lokal47 from "./svg/m47-1.svg"
-
-
-import lokal51 from "./svg/m51-1.svg"
-import lokal52 from "./svg/m52-1.svg"
-import lokal53 from "./svg/m53-1.svg"
+import lokal44 from "./svg/M44.svg"
+import lokal45 from "./svg/M45.svg"
+import lokal46 from "./svg/M46.svg"
+import lokal47 from "./svg/M47.svg"
+import lokal51 from "./svg/M51.svg"
+import lokal52 from "./svg/M52.svg"
+import lokal53 from "./svg/M53.svg"
 
 
 
