@@ -25,12 +25,12 @@ const Standard = () => {
   return (
 <div className="home">
 <Helmet>
-          <title>Standard</title>
-          <meta name="description" content="Standard wykończenia Willi Złocień w Krynicy-Zdrój" />
+          <title>Willa złocień</title>
+          <meta name="description" content="Willa Złocień w Krynicy-Zdrój" />
           <meta property="og:image" content="https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp" />
           <link
             rel="canonical"
-            href="https://willazlocien.com/standard"
+            href="https://willazlocien.com/"
           />
           </Helmet>
 <br />
@@ -53,13 +53,13 @@ const Standard = () => {
             Standard
           </Link>
           <br/><br/>
-          <Link to="offer" className="btn red navbaritem" >
+          <Link to="lokale" className="btn red navbaritem" >
             Lokale
           </Link><br/><br/>
-          <Link to="gallery" className="btn red navbaritem">
+          <Link to="galeria" className="btn red navbaritem">
             Galeria
           </Link><br/><br/>
-          <Link to="contact" className="btn red navbaritem">
+          <Link to="kontakt" className="btn red navbaritem">
             Kontakt
           </Link>
  </div>
