@@ -25,9 +25,9 @@ let imgh4 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/s
 export default class Gallery extends React.Component {
   render() {
     return (
-      
+
       <Row className="black">
-          <Helmet>
+        <Helmet>
           <title>Galeria</title>
           <meta name="description" content="Galeria zdjęć willa Złocień w Krynicy-Zdrój" />
           <meta property="og:image" content="https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp" />
@@ -36,15 +36,15 @@ export default class Gallery extends React.Component {
             href="https://willazlocien.com/galeria"
           />
         </Helmet>
-          <br />
-            <div className="hide-on-small-only">
-              <Nav />
-            </div>
-            <div className="hide-on-med-and-up">
-              <NavMobile />
-            </div>
-            <br />
-        <Row/><div className="standard"></div>
+        <br />
+        <div className="hide-on-small-only">
+          <Nav />
+        </div>
+        <div className="hide-on-med-and-up">
+          <NavMobile />
+        </div>
+        <br />
+        <Row /><div className="standard"></div>
         <Col s={12} m={6}>
           <MediaBox
             className="z-depth-3"
@@ -113,28 +113,12 @@ export default class Gallery extends React.Component {
           </MediaBox>
           <Row />
         </Col>
-        <Col s={12} m={6}>
-          <MediaBox
-            className="z-depth-3"
-            id="MediaBox_1"
-            options={{
-              inDuration: 275,
-              onCloseEnd: null,
-              onCloseStart: null,
-              onOpenEnd: null,
-              onOpenStart: null,
-              outDuration: 200,
-            }}
-          >
-            <img alt="https://scontent.flcj1-1.fna.fbcdn.net/v/t39.30808-6/294513970_5459907027399205_4461154066782848590_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q2hwhnNMoesAX9PUaYc&_nc_ht=scontent.flcj1-1.fna&oh=00_AT93HYM7NfpGoWebeEw1MrSlCxaHzYq-uBLr0oGnnLJd7Q&oe=62DBB30A" src={scene8} width="100%" />
-          </MediaBox>
-          <Row />
-        </Col>
+       
 
 
 
 
-     
+
         <Col s={12} m={6}>
           <MediaBox
             className="z-depth-3"
@@ -186,12 +170,12 @@ export default class Gallery extends React.Component {
           </MediaBox>
           <Row />
         </Col>
-     
-      
-  
-       
+
+
+
+
         {" "}
-        
+
       </Row>
     );
   }
