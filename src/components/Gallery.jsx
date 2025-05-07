@@ -8,21 +8,17 @@ import scene8 from "../components/img/Scene 8.webp"
 import scene9 from "../components/img/Scene 9 (2).webp"
 import scene7 from "../components/img/Scene 7.webp"
 
+
+
+import imgh1 from "../components/img/HOLMAJ25.jpg"
+
+import imgh4 from "../components/img/BUDYNEKMAJ25.jpg"
+
+let imgh2 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol2.webp";
+
 let img19 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto.webp"
 let img20 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-2.webp"
 let img21 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/budynek-foto-3.webp"
-
-let img1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 01.webp";
-let img5 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 05.webp";
-let img12 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/Image 12.webp";
-
-let imgh1 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol1.webp";
-let imgh2 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol2.webp";
-let imgh3 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol3.webp";
-let imgh4 = "https://raw.githubusercontent.com/willazlocien/willzazlocien/main/src/components/img/hol4.webp";
-
-
-
 export default class Gallery extends React.Component {
   render() {
     return (
