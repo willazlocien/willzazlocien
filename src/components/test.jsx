@@ -1,6 +1,6 @@
 import db from "./firebase.config";
 import React, { useState, useEffect } from "react";
-import Lista from "./Lista";
+import ListaLokali from "./ListaLokali";
 
 import "materialize-css";
 import {  Col, Row } from "react-materialize";
@@ -77,7 +77,7 @@ useEffect(() => {
       </Row>
     );
   });
-  const items2 = Lista.map((data) => {
+  const items2 = ListaLokali.map((data) => {
     return (
       <Row>
         <Col className="tabela" s={12}>
